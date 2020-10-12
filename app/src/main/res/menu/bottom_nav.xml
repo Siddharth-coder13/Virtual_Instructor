@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/yoga"
-        android:title="Yoga"
-        android:checked="true"
-        android:iconTint="#000"/>
+    <!--Adding items in bottom navigation view-->
 
-    <item android:id="@+id/meditation"
+    <item android:id="@+id/yoga_nav"
+        android:title="Yoga"
+        android:enabled="true"
+        />
+
+    <item android:id="@+id/meditation_nav"
+        android:enabled="true"
         android:title="Meditation"
         />
 
