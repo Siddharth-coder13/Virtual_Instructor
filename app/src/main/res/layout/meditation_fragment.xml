@@ -5,37 +5,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#fff">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/meditation_image"
-            android:layout_width="350sp"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
             android:src="@drawable/focus"
-            android:layout_marginStart="20sp"
-            android:scaleType="centerCrop"
-            android:paddingBottom="20sp"
-            android:paddingTop="20sp"
-            android:layout_centerHorizontal="true"
-            android:layout_height="350sp"/>
+            android:id="@+id/meditation_image"
+            android:layout_centerHorizontal="true"/>
 
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            android:layout_centerHorizontal="true"
+            app:queryHint="search here"
+            android:layout_marginTop="10sp"
+            android:elevation="5sp"/>
 
         <TextView
+            android:id="@+id/meditation_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Meditation"
             android:textSize="35sp"
             android:layout_alignParentEnd="true"
             android:layout_above="@id/channel1"
-            android:layout_marginBottom="30sp"
-            android:layout_marginEnd="35sp"/>
+            android:layout_marginBottom="5sp"
+            android:layout_marginEnd="30sp"/>
 
         <TextView
             android:id="@+id/channel1"
-            android:layout_below="@id/meditation_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/meditation_image"
             android:text="Channel 1"
             android:textSize="20sp"
             android:layout_marginStart="20sp"
@@ -47,11 +53,12 @@
             android:paddingEnd="30sp"/>
 
         <HorizontalScrollView
-            android:id="@+id/channel_card"
+            android:id="@+id/channel1_card"
             android:layout_width="wrap_content"
             android:layout_marginStart="10sp"
             android:layout_below="@id/channel1"
             android:layout_marginBottom="20sp"
+            android:scrollbars="none"
             android:layout_height="wrap_content">
 
             <GridLayout
@@ -117,6 +124,7 @@
                         <ImageView
                             android:layout_width="130sp"
                             android:layout_height="130sp"
+                            android:src="@drawable/mindfullness"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -150,6 +158,7 @@
                         <ImageView
                             android:layout_width="130sp"
                             android:layout_height="130sp"
+                            android:src="@drawable/mindfullness"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -172,25 +181,13 @@
 
             </GridLayout>
 
-
-
-
-
-
-
-
-
-
-
-
-
         </HorizontalScrollView>
 
         <TextView
             android:id="@+id/channel2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/channel_card"
+            android:layout_below="@id/channel1_card"
             android:layout_marginStart="20sp"
             android:layout_marginBottom="15sp"
             android:background="@drawable/bottom_background"
@@ -207,6 +204,7 @@
             android:layout_marginStart="10sp"
             android:layout_below="@id/channel2"
             android:layout_marginBottom="50sp"
+            android:scrollbars="none"
             android:layout_height="wrap_content">
 
             <GridLayout
@@ -230,6 +228,7 @@
                         android:id="@+id/padmasana_image"
                         android:layout_width="130sp"
                         android:layout_height="130sp"
+                        android:src="@drawable/focus"
                         android:scaleType="centerCrop"/>
 
                     <TextView
@@ -265,6 +264,7 @@
                         <ImageView
                             android:layout_width="130sp"
                             android:layout_height="130sp"
+                            android:src="@drawable/mindfullness"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -298,6 +298,7 @@
                         <ImageView
                             android:layout_width="130sp"
                             android:layout_height="130sp"
+                            android:src="@drawable/mindfullness"
                             android:scaleType="centerCrop"/>
 
                         <TextView
@@ -319,18 +320,6 @@
                 </androidx.cardview.widget.CardView>
 
             </GridLayout>
-
-
-
-
-
-
-
-
-
-
-
-
 
         </HorizontalScrollView>
 
