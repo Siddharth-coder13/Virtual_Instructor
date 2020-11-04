@@ -17,8 +17,10 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20sp"
+            android:textColor="#4F7282"
             android:text="Channel 1"
             android:textStyle="bold"
+            android:fontFamily=""
             android:textSize="25sp"/>
 
         <TextView
@@ -31,7 +33,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="60sp"
             android:layout_marginTop="75sp"
-            android:textColor="#000"/>
+            android:textColor="#4F7282"/>
 
         <TextView
             android:id="@+id/med2_text"
@@ -43,7 +45,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="60sp"
             android:layout_marginTop="160sp"
-            android:textColor="#000"/>
+            android:textColor="#4F7282"/>
 
         <TextView
             android:id="@+id/med3_text"
@@ -55,7 +57,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="60sp"
             android:layout_marginTop="150sp"
-            android:textColor="#000"/>
+            android:textColor="#4F7282"/>
 
         <TextView
             android:id="@+id/med4_text"
@@ -67,7 +69,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="60sp"
             android:layout_marginTop="150sp"
-            android:textColor="#000"/>
+            android:textColor="#4F7282"/>
 
         <TextView
             android:id="@+id/med5_text"
@@ -79,7 +81,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="60sp"
             android:layout_marginTop="150sp"
-            android:textColor="#000"/>
+            android:textColor="#4F7282"/>
 
         <GridLayout
             android:layout_below="@id/channel1"
