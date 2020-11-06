@@ -16,7 +16,7 @@
             android:scaleType="centerCrop"
             android:paddingBottom="20sp"
             android:paddingTop="20sp"
-            android:src="@drawable/focus"
+            android:src="@drawable/med_image"
             android:layout_centerHorizontal="true"
             android:layout_height="350sp"/>
 
