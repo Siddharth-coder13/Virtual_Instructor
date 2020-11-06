@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/beginners_nav"
+        android:enabled="true"
+        android:title="Beginners"
+        />
+
+    <item android:id="@+id/advanced_nav"
+        android:title="Advanced"
+        android:enabled="true"
+        />
+
+</menu>

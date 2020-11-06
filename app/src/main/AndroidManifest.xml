@@ -6,11 +6,13 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".channel_list"></activity>
+        <activity android:name=".environment_list"></activity>
+        <activity android:name=".med_channel_list.channel2_med_list" />
+        <activity android:name=".med_channel_list.channel1_med_list" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">

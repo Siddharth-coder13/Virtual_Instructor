@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".med_channel_list.channel1_med_list">
+
+   <!--This xml files displays the list of meditations available in channel 1-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/channel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:textColor="#4F7282"
+            android:text="Channel 1"
+            android:textStyle="bold"
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textSize="25sp"/>
+
+        <GridLayout
+            android:layout_below="@id/channel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:layout_marginBottom="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/channel1_med1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardElevation="10sp"
+                android:layout_marginTop="15sp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/med1_image"
+                        android:src="@drawable/focus"/>
+
+                    <TextView
+                        android:id="@+id/med1_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditation 1"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/med1_image"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="20sp"
+                        android:textAlignment="center"
+                        android:textColor="#4F7282"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/channel1_med2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardElevation="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/med2_image"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/focus"/>
+
+                    <TextView
+                        android:id="@+id/med2_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditation 2"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/med2_image"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="20sp"
+                        android:textAlignment="center"
+                        android:textColor="#4F7282"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/channel1_med3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardElevation="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/med3_image"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/focus"/>
+
+                    <TextView
+                        android:id="@+id/med3_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditation 3"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/med3_image"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="20sp"
+                        android:textAlignment="center"
+                        android:textColor="#4F7282"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/channel1_med4"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardElevation="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/med4_image"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/focus"/>
+
+                    <TextView
+                        android:id="@+id/med4_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditation 4"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/med4_image"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="20sp"
+                        android:textAlignment="center"
+                        android:textColor="#4F7282"/>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/channel1_med5"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardElevation="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/med5_image"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/focus"/>
+
+                    <TextView
+                        android:id="@+id/med5_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditation 5"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/med5_image"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="20sp"
+                        android:textAlignment="center"
+                        android:textColor="#4F7282"/>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/channel1_med6"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:cardElevation="10sp"
+                android:layout_marginTop="30sp"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/med6_image"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/focus"/>
+
+                    <TextView
+                        android:id="@+id/med6_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditation 6"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/century_gothic"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@id/med6_image"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="20sp"
+                        android:textAlignment="center"
+                        android:textColor="#4F7282"/>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -24,65 +24,225 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/channel1"
+            android:layout_above="@id/med_channel1_layout"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="35dp"
             android:textColor="#4F7282"
             android:layout_marginBottom="31dp"
             android:text="Meditation"
+            android:textStyle="bold"
+            android:fontFamily="@font/myriad_pro_regular"
             android:textSize="35sp" />
 
-        <TextView
-            android:id="@+id/channel1"
+        <RelativeLayout
+            android:id="@+id/med_channel1_layout"
             android:layout_below="@id/meditation_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Channel 1"
-            android:textSize="20sp"
-            android:layout_marginStart="20sp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/channel_background"
-            android:textStyle="bold"
-            android:textColor="#fff"
-            android:paddingStart="10sp"
-            android:paddingEnd="30sp"/>
-
-        <HorizontalScrollView
-            android:id="@+id/channel_card"
-            android:layout_width="wrap_content"
-            android:layout_marginStart="10sp"
-            android:layout_below="@id/channel1"
-            android:scrollbars="none"
-            android:layout_marginBottom="20sp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <GridLayout
+            <TextView
+                android:id="@+id/channel1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:rowCount="1">
+                android:layout_height="wrap_content"
+                android:text="Channel 1"
+                android:textSize="15sp"
+                android:fontFamily="@font/century_gothic"
+                android:layout_marginStart="20sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/channel_background"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:paddingStart="15sp"
+                android:paddingEnd="35sp"/>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
+            <HorizontalScrollView
+                android:id="@+id/channel_card"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_below="@id/channel1"
+                android:scrollbars="none"
+                android:layout_marginBottom="20sp"
+                android:layout_height="wrap_content">
+
+                <GridLayout
                     android:layout_width="wrap_content"
-                    app:cardElevation="10dp"
-                    android:layout_gravity="fill"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:cardBackgroundColor="#fff"
-                    android:id="@+id/focus1_meditation"
-                    app:cardCornerRadius="20sp">
+                    android:layout_height="match_parent"
+                    android:rowCount="1">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:id="@+id/focus1_meditation"
+                        app:cardCornerRadius="20sp">
 
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:src="@drawable/focus"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Padmasana"
+                                android:layout_gravity="bottom"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginTop="12dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:background="@color/colorPrimary"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/mindfulness1_meditation"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:src="@drawable/mindfullness"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Padmasana"
+                                android:layout_gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginTop="12dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/spiritual1_meditation"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:src="@drawable/focus"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Padmasana"
+                                android:layout_gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginTop="12dp"/>
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/med_channel2_layout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/med_channel1_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/channel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/channel_background"
+                android:paddingStart="15sp"
+                android:fontFamily="@font/century_gothic"
+                android:paddingEnd="35sp"
+                android:text="Channel 2"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/channel2_card"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="10sp"
+                android:scrollbars="none"
+                android:layout_below="@id/channel2"
+                android:layout_marginBottom="50sp"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:rowCount="1">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_rowWeight="1"
+                        app:cardBackgroundColor="#fff"
+                        android:layout_columnWeight="1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:id="@+id/focus_meditation"
+                        app:cardCornerRadius="20sp">
 
                         <ImageView
+                            android:id="@+id/padmasana_image"
                             android:layout_width="130sp"
                             android:layout_height="130sp"
-                            android:src="@drawable/focus"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/focus" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -94,242 +254,101 @@
                             android:textSize="18sp"
                             android:layout_marginTop="12dp"/>
 
-                    </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    app:cardElevation="10dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:cardBackgroundColor="#fff"
-                    android:background="@color/colorPrimary"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:id="@+id/mindfulness1_meditation"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="130sp"
-                            android:layout_height="130sp"
-                            android:src="@drawable/mindfullness"
-                            android:scaleType="centerCrop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="Padmasana"
-                            android:layout_gravity="center"
-                            android:textColor="#000000"
-                            android:textSize="18sp"
-                            android:layout_marginTop="12dp"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    app:cardElevation="10dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:cardBackgroundColor="#fff"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:id="@+id/spiritual1_meditation"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="130sp"
-                            android:layout_height="130sp"
-                            android:src="@drawable/focus"
-                            android:scaleType="centerCrop"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="Padmasana"
-                            android:layout_gravity="center"
-                            android:textColor="#000000"
-                            android:textSize="18sp"
-                            android:layout_marginTop="12dp"/>
-
-
-
-                    </LinearLayout>
-
-
-
-
-                </androidx.cardview.widget.CardView>
-
-            </GridLayout>
-
-
-        </HorizontalScrollView>
-
-        <TextView
-            android:id="@+id/channel2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/channel_card"
-            android:layout_marginStart="20sp"
-            android:layout_marginBottom="15sp"
-            android:background="@drawable/channel_background"
-            android:paddingStart="10sp"
-            android:paddingEnd="30sp"
-            android:text="Channel 2"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <HorizontalScrollView
-            android:id="@+id/channel2_card"
-            android:layout_width="wrap_content"
-            android:layout_marginStart="10sp"
-            android:scrollbars="none"
-            android:layout_below="@id/channel2"
-            android:layout_marginBottom="50sp"
-            android:layout_height="wrap_content">
-
-            <GridLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:rowCount="1">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    app:cardElevation="10dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="#fff"
-                    android:layout_columnWeight="1"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:id="@+id/focus_meditation"
-                    app:cardCornerRadius="20sp">
-
-                    <ImageView
-                        android:id="@+id/padmasana_image"
-                        android:layout_width="130sp"
-                        android:layout_height="130sp"
-                        android:scaleType="centerCrop"
-                        app:srcCompat="@drawable/focus" />
-
-                    <TextView
-                        android:layout_width="match_parent"
+                    <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
-                        android:text="Padmasana"
-                        android:layout_gravity="bottom"
-                        android:textAlignment="center"
-                        android:textColor="#000000"
-                        android:textSize="18sp"
-                        android:layout_marginTop="12dp"/>
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/mindfulness_meditation"
+                        app:cardCornerRadius="20dp">
 
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    app:cardElevation="10dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:cardBackgroundColor="#fff"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:id="@+id/mindfulness_meditation"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="130sp"
-                            android:layout_height="130sp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/mindfullness" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Padmasana"
-                            android:layout_gravity="center"
-                            android:textColor="#000000"
-                            android:textSize="18sp"
-                            android:layout_marginTop="12dp"/>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                            android:orientation="vertical">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_height="wrap_content"
-                    android:layout_width="wrap_content"
-                    app:cardElevation="10dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:cardBackgroundColor="#fff"
-                    android:layout_rowWeight="1"
-                    android:layout_columnWeight="1"
-                    android:id="@+id/spiritual_meditation"
-                    app:cardCornerRadius="20dp">
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/mindfullness" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Padmasana"
+                                android:layout_gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginTop="12dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
-                        <ImageView
-                            android:layout_width="130sp"
-                            android:layout_height="130sp"
-                            android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/focus" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/spiritual_meditation"
+                        app:cardCornerRadius="20dp">
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Padmasana"
-                            android:layout_gravity="center"
-                            android:textColor="#000000"
-                            android:textSize="18sp"
-                            android:layout_marginTop="12dp"/>
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/focus" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Padmasana"
+                                android:layout_gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="18sp"
+                                android:layout_marginTop="12dp"/>
 
 
 
-                    </LinearLayout>
-
-
-
-
-                </androidx.cardview.widget.CardView>
-
-            </GridLayout>
-
-
-
-
-
-
-
-
+                        </LinearLayout>
 
 
 
 
+                    </androidx.cardview.widget.CardView>
 
-        </HorizontalScrollView>
+                </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
