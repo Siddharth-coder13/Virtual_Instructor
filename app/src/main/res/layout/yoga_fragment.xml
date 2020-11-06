@@ -71,14 +71,14 @@
 
         <ImageView
             android:id="@+id/yoga_image"
-            android:layout_width="350sp"
-
+            android:layout_width="350dp"
+            android:src="@drawable/yoga_image"
             android:layout_below="@+id/yogaLayout"
             android:scaleType="centerCrop"
             android:paddingBottom="20sp"
             android:paddingTop="30sp"
             android:layout_centerHorizontal="true"
-            android:layout_height="350sp"/>
+            android:layout_height="350dp"/>
 
 
         <TextView
