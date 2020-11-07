@@ -9,10 +9,25 @@
    <!--This xml files displays the list of meditations available in channel 1-->
 
     <RelativeLayout
+        android:id="@+id/relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/med_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/med_channel1_back"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
         <TextView
+            android:layout_below="@id/med_toolbar"
             android:id="@+id/channel1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

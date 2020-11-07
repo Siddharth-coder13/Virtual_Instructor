@@ -6,9 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".med_channel_list.channel2_med_list">
 
+    <!--This xml files displays the list of meditations available in channel 1-->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/med_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/med_channel2_back"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:id="@+id/channel2"

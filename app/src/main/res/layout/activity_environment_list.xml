@@ -12,8 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/med_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/env_back"
+                android:layout_width="32sp"
+                android:layout_height="32sp"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
         <TextView
             android:id="@+id/heading"
+            android:layout_below="@id/med_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

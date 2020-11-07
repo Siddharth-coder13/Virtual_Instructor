@@ -11,9 +11,9 @@
 
         <ImageView
             android:id="@+id/meditation_image"
-            android:layout_width="350sp"
-            android:layout_marginStart="20sp"
-            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:scaleType="fitStart"
+            android:paddingEnd="20sp"
             android:paddingBottom="20sp"
             android:paddingTop="20sp"
             android:src="@drawable/med_image"

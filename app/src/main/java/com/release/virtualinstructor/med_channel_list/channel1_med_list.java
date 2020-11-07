@@ -6,8 +6,10 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.release.virtualinstructor.MainActivity;
 import com.release.virtualinstructor.R;
 import com.release.virtualinstructor.environment_list;
 
@@ -18,6 +20,15 @@ public class channel1_med_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_channel1_med_list);
+
+        //close activity
+        ImageView back = findViewById(R.id.med_channel1_back);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         //This java file is used to navigate to environment_list activity
 
@@ -35,6 +46,7 @@ public class channel1_med_list extends AppCompatActivity {
         openEnvironmentList(med4,text4);
         openEnvironmentList(med5,text5);
         openEnvironmentList(med6,text6);
+
     }
 
     private void openEnvironmentList(CardView med, final TextView text){
