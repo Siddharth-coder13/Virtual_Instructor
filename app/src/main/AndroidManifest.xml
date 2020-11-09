@@ -13,6 +13,8 @@
         <activity android:name=".environment_list"></activity>
         <activity android:name=".med_channel_list.channel2_med_list" />
         <activity android:name=".med_channel_list.channel1_med_list" />
+        <activity android:name=".channel_yoga_list.yoga_channel1_list" />
+        <activity android:name=".channel_yoga_list.yoga_channel2_list" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme">
