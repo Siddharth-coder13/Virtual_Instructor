@@ -2,15 +2,25 @@ package com.release.virtualinstructor;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
+
+    ListView listView;
+    ArrayAdapter adapter;
+    ArrayList<String> list;
+    ArrayList<String> temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.yoga_nav :
                         selectedFragment = new yoga_fragment();
-                        Toast.makeText(MainActivity.this, "Yoga", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.meditation_nav :
                         selectedFragment = new meditation_fragment();
-                        Toast.makeText(MainActivity.this, "Meditation", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
@@ -43,5 +51,49 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //search yoga or meditation
+        SearchView searchView = findViewById(R.id.search_view);
+        listView = findViewById(R.id.list_view);
+        list = new ArrayList<>();
+        temp = new ArrayList<>();
+        temp.add("Yoga");
+        temp.add("Meditation");
+        temp.add("Channel1");
+        temp.add("Channel2");
+        temp.add("Meditation1");
+        temp.add("Meditation2");
+        temp.add("Meditation3");
+        temp.add("Meditation4");
+        temp.add("Meditation5");
+        temp.add("Meditation6");
+
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
+
+
+        /*searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                list.clear();
+                if(temp.contains(query)){
+                    list.add(query);
+                }
+                else{
+                    list.add("No match found");
+                }
+                listView.setAdapter(adapter);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                list.addAll(temp);
+                adapter.getFilter().filter(newText);
+                listView.setAdapter(adapter);
+                return false;
+            }
+
+
+        });*/
     }
 }

@@ -50,6 +50,7 @@
             android:layout_marginEnd="20sp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/Forest"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 app:cardElevation="10sp"
@@ -74,7 +75,7 @@
                         android:id="@+id/med1_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Environment 1"
+                        android:text="Forest"
                         android:textSize="15sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -95,6 +96,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/mountain"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 app:cardElevation="10sp"
@@ -119,7 +121,7 @@
                         android:id="@+id/med2_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Environment 2"
+                        android:text="Mountain"
                         android:textSize="15sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -140,6 +142,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/space"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 app:cardElevation="10sp"
@@ -164,7 +167,7 @@
                         android:id="@+id/med3_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Environment 3"
+                        android:text="Space"
                         android:textSize="15sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"

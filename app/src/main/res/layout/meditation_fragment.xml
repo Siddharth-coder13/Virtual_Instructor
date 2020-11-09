@@ -217,7 +217,7 @@
                 android:layout_marginStart="10sp"
                 android:scrollbars="none"
                 android:layout_below="@id/channel2"
-                android:layout_marginBottom="50sp"
+                android:layout_marginBottom="20sp"
                 android:layout_height="wrap_content">
 
                 <GridLayout
