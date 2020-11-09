@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.release.virtualinstructor">
 
     <application
@@ -9,8 +10,10 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".environment_list"></activity>
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity android:name=".unityHolder"></activity>
+        <activity android:name=".environment_list" />
         <activity android:name=".med_channel_list.channel2_med_list" />
         <activity android:name=".med_channel_list.channel1_med_list" />
         <activity
