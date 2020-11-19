@@ -12,29 +12,80 @@
         <ImageView
             android:id="@+id/yoga_image"
             android:layout_width="match_parent"
-            android:paddingEnd="20sp"
-            android:paddingBottom="20sp"
-            android:paddingTop="20sp"
             android:src="@drawable/yoga_image"
+            android:paddingTop="40dp"
             android:layout_centerHorizontal="true"
-            android:layout_height="350sp"/>
+            android:layout_height="400sp"/>
 
         <TextView
+            android:id="@+id/yogaText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/yoga_channel1_layout"
+            android:layout_below="@id/yoga_image"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="35dp"
-            android:textColor="#4F7282"
-            android:layout_marginBottom="31dp"
-            android:text="Yoga"
-            android:textStyle="bold"
+            android:layout_marginTop="-105dp"
+            android:layout_marginEnd="89dp"
             android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="35sp" />
+            android:text="Yoga"
+            android:textColor="#4F7282"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yogaText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yogaText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:textColor="#79a1b3"
+            android:text="Yoga is also a kind of "
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/yogaText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yogaText2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="#79a1b3"
+            android:text="meditation which involves physical,"
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/yogaText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yogaText3"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="#79a1b3"
+            android:text="mental and spiritual practices. It helps in all"
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/yogaText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yogaText4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="40dp"
+            android:textColor="#79a1b3"
+            android:layout_marginBottom="31dp"
+            android:text="round development of the body and mind."
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textSize="18sp"/>
 
         <RelativeLayout
             android:id="@+id/yoga_channel1_layout"
-            android:layout_below="@+id/yoga_image"
+            android:layout_below="@+id/yogaText5"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -385,7 +436,8 @@
             android:id="@+id/yoga_channel2_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/yoga_channel1_layout">
+            android:layout_below="@id/yoga_channel1_layout"
+            android:layout_marginBottom="50dp">
 
             <TextView
                 android:id="@+id/channel2"
