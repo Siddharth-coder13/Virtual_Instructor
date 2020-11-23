@@ -22,21 +22,65 @@
 
 
         <TextView
+            android:id="@+id/meditation_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/med_channel1_layout"
+            android:layout_marginTop="210sp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="35dp"
             android:textColor="#4F7282"
-            android:layout_marginBottom="31dp"
             android:text="Meditation"
             android:textStyle="bold"
             android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="35sp" />
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/med_def1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:text="Meditation isn't about"
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textAlignment="textEnd"
+            android:textColor="#4F7282"
+            android:layout_below="@id/meditation_text"
+            />
+
+        <TextView
+            android:id="@+id/med_def2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:text="becoming a different person, a"
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textAlignment="textEnd"
+            android:textColor="#4F7282"
+            android:layout_below="@id/med_def1"
+            />
+
+        <TextView
+            android:id="@+id/med_def3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:textAlignment="textStart"
+            android:layout_marginStart="20sp"
+            android:text="new person, or even better person. It's all about training in awareness and getting a healthy
+sense of perspective. You're not trying to turn off your thoughts or feelings, you're learning to observe them without judgement,
+and eventually you start to better understand."
+            android:fontFamily="@font/myriad_pro_regular"
+            android:textColor="#4F7282"
+            android:layout_below="@id/med_def2"
+            />
 
         <RelativeLayout
             android:id="@+id/med_channel1_layout"
-            android:layout_below="@id/meditation_image"
+            android:layout_below="@id/med_def3"
+            android:layout_marginTop="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -95,11 +139,13 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Padmasana"
+                                android:text="Focus Meditation"
                                 android:layout_gravity="bottom"
+                                android:fontFamily="@font/century_gothic"
                                 android:textAlignment="center"
                                 android:textColor="#000000"
-                                android:textSize="18sp"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
                                 android:layout_marginTop="12dp"/>
 
                         </LinearLayout>
@@ -131,12 +177,15 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Padmasana"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mindfullness Meditation"
                                 android:layout_gravity="center"
                                 android:textColor="#000000"
-                                android:textSize="18sp"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -161,16 +210,19 @@
                             <ImageView
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
-                                android:src="@drawable/focus"
+                                android:src="@drawable/spiritual"
                                 android:scaleType="centerCrop"/>
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Padmasana"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Spiritual Meditation"
                                 android:layout_gravity="center"
                                 android:textColor="#000000"
-                                android:textSize="18sp"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/century_gothic"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
                                 android:layout_marginTop="12dp"/>
 
 
@@ -242,16 +294,18 @@
                             android:layout_width="130sp"
                             android:layout_height="130sp"
                             android:scaleType="centerCrop"
-                            app:srcCompat="@drawable/focus" />
+                            android:src="@drawable/android"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Padmasana"
+                            android:text="Coming soon"
                             android:layout_gravity="bottom"
                             android:textAlignment="center"
                             android:textColor="#000000"
-                            android:textSize="18sp"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/century_gothic"
+                            android:textStyle="bold"
                             android:layout_marginTop="12dp"/>
 
 
@@ -278,16 +332,20 @@
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/mindfullness" />
+                                app:srcCompat="@drawable/android" />
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Padmasana"
-                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Coming soon"
+                                android:layout_gravity="bottom"
+                                android:textAlignment="center"
                                 android:textColor="#000000"
-                                android:textSize="18sp"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
                                 android:layout_marginTop="12dp"/>
+
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -312,39 +370,25 @@
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
                                 android:scaleType="centerCrop"
-                                app:srcCompat="@drawable/focus" />
+                                app:srcCompat="@drawable/android" />
 
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Padmasana"
-                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Coming soon"
+                                android:layout_gravity="bottom"
+                                android:textAlignment="center"
                                 android:textColor="#000000"
-                                android:textSize="18sp"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
                                 android:layout_marginTop="12dp"/>
 
-
-
                         </LinearLayout>
-
-
-
 
                     </androidx.cardview.widget.CardView>
 
                 </GridLayout>
-
-
-
-
-
-
-
-
-
-
-
-
 
             </HorizontalScrollView>
 

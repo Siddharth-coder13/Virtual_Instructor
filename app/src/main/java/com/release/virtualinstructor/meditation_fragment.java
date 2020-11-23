@@ -35,13 +35,13 @@ public class meditation_fragment extends Fragment {
             }
         });
 
-        channel2.setOnClickListener(new View.OnClickListener() {
+        /*channel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), channel2_med_list.class);
                 startActivity(i);
             }
-        });
+        });*/
 
 
         return v;

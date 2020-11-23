@@ -43,9 +43,9 @@ public class channel1_med_list extends AppCompatActivity {
         openEnvironmentList(med1,text1);
         openEnvironmentList(med2,text2);
         openEnvironmentList(med3,text3);
-        openEnvironmentList(med4,text4);
+        /*openEnvironmentList(med4,text4);
         openEnvironmentList(med5,text5);
-        openEnvironmentList(med6,text6);
+        openEnvironmentList(med6,text6);*/
 
     }
 

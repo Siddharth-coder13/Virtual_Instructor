@@ -6,4 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".unityHolder">
 
+    <!--It holds the unity activity and closes with it.-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

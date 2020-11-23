@@ -65,18 +65,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/med1_image"
-                        android:src="@drawable/focus"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/focus"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
 
                     <TextView
                         android:id="@+id/med1_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meditation 1"
+                        android:text="Focus Meditation"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -89,8 +98,6 @@
 
 
                 </RelativeLayout>
-
-
 
 
 
@@ -111,18 +118,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/med2_image"
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="12dp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+
+                    </androidx.cardview.widget.CardView>
+
 
                     <TextView
                         android:id="@+id/med2_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meditation 2"
+                        android:text="Spiritual Meditation"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -133,12 +148,7 @@
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
 
-
-
                 </RelativeLayout>
-
-
-
 
             </androidx.cardview.widget.CardView>
 
@@ -157,18 +167,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/med3_image"
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        app:cardCornerRadius="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/spiritual"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/med3_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meditation 3"
+                        android:text="Spiritual Meditation"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -180,7 +197,6 @@
                         android:textColor="#4F7282"/>
 
                 </RelativeLayout>
-
 
             </androidx.cardview.widget.CardView>
 
@@ -199,18 +215,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/med4_image"
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        app:cardCornerRadius="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/android"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/med4_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meditation 4"
+                        android:text="Coming Soon"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -222,8 +245,6 @@
                         android:textColor="#4F7282"/>
 
                 </RelativeLayout>
-
-
 
             </androidx.cardview.widget.CardView>
 
@@ -242,18 +263,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
+                    <androidx.cardview.widget.CardView
                         android:id="@+id/med5_image"
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        app:cardCornerRadius="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/android"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/med5_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meditation 5"
+                        android:text="Coming Soon"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -285,18 +313,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="12dp"
                         android:id="@+id/med6_image"
-                        android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/android"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/med6_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Meditation 6"
+                        android:text="Coming Soon"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -308,8 +343,6 @@
                         android:textColor="#4F7282"/>
 
                 </RelativeLayout>
-
-
 
             </androidx.cardview.widget.CardView>
 

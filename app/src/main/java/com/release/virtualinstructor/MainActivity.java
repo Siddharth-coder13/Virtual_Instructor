@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //search yoga or meditation
-        SearchView searchView = findViewById(R.id.search_view);
+        /*SearchView searchView = findViewById(R.id.search_view);
         listView = findViewById(R.id.list_view);
         list = new ArrayList<>();
         temp = new ArrayList<>();
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,list);
 
 
-        /*searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
             public boolean onQueryTextSubmit(String query) {
