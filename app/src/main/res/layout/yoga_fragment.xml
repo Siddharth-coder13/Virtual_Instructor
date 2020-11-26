@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/yoga_image"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="-105dp"
+            android:layout_marginTop="-125dp"
             android:layout_marginEnd="89dp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="Yoga"
@@ -33,12 +33,13 @@
 
         <TextView
             android:id="@+id/yogaText2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/yogaText"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="70dp"
-            android:textColor="#79a1b3"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="textEnd"
             android:text="Yoga is also a kind of "
             android:fontFamily="@font/myriad_pro_regular"
             android:textSize="18sp"/>
@@ -50,8 +51,9 @@
             android:layout_below="@id/yogaText2"
             android:layout_alignParentEnd="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginEnd="30dp"
-            android:textColor="#79a1b3"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/colorPrimary"
             android:text="meditation which involves physical,"
             android:fontFamily="@font/myriad_pro_regular"
             android:textSize="18sp"/>
@@ -63,9 +65,11 @@
             android:layout_below="@id/yogaText3"
             android:layout_alignParentEnd="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginEnd="40dp"
-            android:textColor="#79a1b3"
-            android:text="mental and spiritual practices. It helps in all"
+            android:layout_marginStart="20sp"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="mental and spiritual practices. It helps"
             android:fontFamily="@font/myriad_pro_regular"
             android:textSize="18sp"/>
 
@@ -75,11 +79,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/yogaText4"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="40dp"
-            android:textColor="#79a1b3"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimary"
             android:layout_marginBottom="31dp"
-            android:text="round development of the body and mind."
+            android:text="in all round development of the body and mind."
             android:fontFamily="@font/myriad_pro_regular"
             android:textSize="18sp"/>
 
@@ -436,8 +441,7 @@
             android:id="@+id/yoga_channel2_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/yoga_channel1_layout"
-            android:layout_marginBottom="50dp">
+            android:layout_below="@id/yoga_channel1_layout">
 
             <TextView
                 android:id="@+id/channel2"
@@ -458,7 +462,7 @@
                 android:layout_width="wrap_content"
                 android:layout_marginStart="10sp"
                 android:layout_below="@id/channel2"
-                android:layout_marginBottom="50sp"
+                android:layout_marginBottom="20sp"
                 android:layout_height="wrap_content">
 
                 <GridLayout

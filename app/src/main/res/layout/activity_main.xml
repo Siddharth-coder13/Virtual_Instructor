@@ -10,7 +10,9 @@
     <!--Contains both the fragment-->
 
     <FrameLayout
+
         android:id="@+id/fragment_container"
+        android:layout_above="@id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </FrameLayout>
@@ -34,17 +36,82 @@
         android:layout_height="wrap_content"
         />-->
 
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp"
+        android:background="@drawable/bottom_background"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40sp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/meditation_tab"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_checked_background"/>
+
+        <ImageView
+            android:id="@+id/yoga_tab"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:background="@drawable/bottom_checked_background"/>
+
+    </LinearLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
         app:itemTextAppearance="?android:attr/textAppearanceLarge"
         android:layout_width="match_parent"
-        android:layout_height="20sp"
-        android:layout_alignParentBottom="true"
+        android:layout_height="50sp"
+        app:elevation="-2dp"
         android:layout_marginStart="30sp"
         android:layout_marginEnd="30sp"
+        android:background="#ffffff"
+        app:itemTextColor="@color/bot_nav_color"
         app:menu="@menu/bottom_nav"
-        app:itemBackground="@color/bot_nav_color"
         android:textStyle="bold"
-        android:layout_marginBottom="20sp"/>
+        android:layout_marginBottom="10sp"/>
+
+   <!-- <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginBottom="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#929292"
+            android:text="Meditattion"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#929292"
+            android:layout_height="wrap_content"
+            android:text="Yoga"/>
+
+
+    </LinearLayout>-->
 
 </RelativeLayout>

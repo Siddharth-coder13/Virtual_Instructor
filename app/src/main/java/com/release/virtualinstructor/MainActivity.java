@@ -7,7 +7,9 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -27,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        final ImageView meditation = findViewById(R.id.meditation_tab);
+        final ImageView yoga = findViewById(R.id.yoga_tab);
 
         //to start with yoga fragment
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,new meditation_fragment()).commit();
@@ -41,13 +44,24 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.yoga_nav :
                         selectedFragment = new yoga_fragment();
+                        meditation.setVisibility(View.INVISIBLE);
+                        yoga.setVisibility(View.VISIBLE);
                         break;
                     case R.id.meditation_nav :
                         selectedFragment = new meditation_fragment();
+                        meditation.setVisibility(View.VISIBLE);
+                        yoga.setVisibility(View.INVISIBLE);
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,selectedFragment).commit();
                 return true;
+            }
+        });
+
+        /*meditation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
@@ -92,8 +106,6 @@ public class MainActivity extends AppCompatActivity {
                 listView.setAdapter(adapter);
                 return false;
             }
-
-
-        });*/
+         });*/
     }
 }

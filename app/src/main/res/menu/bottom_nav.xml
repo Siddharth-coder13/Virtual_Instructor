@@ -4,13 +4,11 @@
     <!--Adding items in bottom navigation view-->
 
     <item android:id="@+id/meditation_nav"
-        android:enabled="true"
         android:title="Meditation"
         />
 
     <item android:id="@+id/yoga_nav"
         android:title="Yoga"
-        android:enabled="true"
         />
 
 
