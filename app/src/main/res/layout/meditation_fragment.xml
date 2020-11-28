@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#fff">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -116,12 +115,13 @@ and eventually you start to better understand."
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        android:layout_rowWeight="1"
+                        app:cardElevation="0dp"
+                        android:layout_columnWeight="1"
                         android:layout_gravity="fill"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
-                        app:cardBackgroundColor="#fff"
-                        android:id="@+id/focus1_meditation"
+                        android:id="@+id/focus_meditation"
                         app:cardCornerRadius="20sp">
 
                         <LinearLayout
@@ -137,6 +137,7 @@ and eventually you start to better understand."
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/focus"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Focus Meditation"
@@ -155,14 +156,14 @@ and eventually you start to better understand."
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
                         android:background="@color/colorPrimary"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:id="@+id/mindfulness1_meditation"
+                        android:id="@+id/mindfulness_meditation"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -177,6 +178,7 @@ and eventually you start to better understand."
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/mindfulness"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Mindfullness Meditation"
@@ -193,13 +195,13 @@ and eventually you start to better understand."
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:id="@+id/spiritual1_meditation"
+                        android:id="@+id/spiritual_meditation"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -214,6 +216,7 @@ and eventually you start to better understand."
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/spiritual"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Spiritual Meditation"
@@ -229,13 +232,9 @@ and eventually you start to better understand."
 
                         </LinearLayout>
 
-
-
-
                     </androidx.cardview.widget.CardView>
 
                 </GridLayout>
-
 
             </HorizontalScrollView>
 
@@ -286,7 +285,7 @@ and eventually you start to better understand."
                         android:layout_columnWeight="1"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
-                        android:id="@+id/focus_meditation"
+                        android:id="@+id/focus1_meditation"
                         app:cardCornerRadius="20sp">
 
                         <ImageView
@@ -320,7 +319,7 @@ and eventually you start to better understand."
                         app:cardBackgroundColor="#fff"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:id="@+id/mindfulness_meditation"
+                        android:id="@+id/mindfulness1_meditation"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -358,7 +357,7 @@ and eventually you start to better understand."
                         app:cardBackgroundColor="#fff"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:id="@+id/spiritual_meditation"
+                        android:id="@+id/spiritual1_meditation"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout

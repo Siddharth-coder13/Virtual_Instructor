@@ -125,7 +125,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_gravity="fill"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
@@ -146,6 +146,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/tadasana"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="Tadasana"
@@ -162,7 +163,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -184,6 +185,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/vriksha"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Vrikshasana"
@@ -197,7 +199,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -218,6 +220,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/adho"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Adho Mukho Svanasana"
@@ -231,7 +234,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -252,6 +255,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/bala"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Balasana"
@@ -265,7 +269,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -286,6 +290,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/bhujanga"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Bhujangasana"
@@ -299,7 +304,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -320,6 +325,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/kursi"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Kursiasana"
@@ -333,7 +339,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -354,6 +360,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/nauka"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Naukasana"
@@ -367,7 +374,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -388,6 +395,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/paschim"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Paschimottanasana"
@@ -401,7 +409,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -422,6 +430,7 @@
                                 android:scaleType="centerCrop"/>
 
                             <TextView
+                                android:id="@+id/trikon"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Trikonasana"
@@ -474,7 +483,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_rowWeight="1"
                         app:cardBackgroundColor="#fff"
                         android:layout_columnWeight="1"
@@ -506,7 +515,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -540,7 +549,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
