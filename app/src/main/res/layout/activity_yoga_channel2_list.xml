@@ -9,6 +9,7 @@
     tools:context=".channel_yoga_list.yoga_channel2_list">
 
     <RelativeLayout
+        android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -31,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20sp"
+            android:layout_below="@+id/yoga_toolbar"
             android:textColor="#4F7282"
             android:text="Instructor"
             android:textStyle="bold"
@@ -64,12 +66,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga1_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga1_text"
@@ -105,13 +115,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga2_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga2_text"
@@ -130,7 +146,6 @@
 
                 </RelativeLayout>
 
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -148,13 +163,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga3_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga3_text"
@@ -173,7 +194,6 @@
 
                 </RelativeLayout>
 
-
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -191,12 +211,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga4_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga4_text"
@@ -231,12 +258,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga5_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga5_text"
@@ -272,12 +306,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga6_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga6_text"
@@ -313,12 +354,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga7_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga7_text"
@@ -354,12 +402,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga8_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tadasana"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga8_text"
@@ -395,12 +450,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:id="@+id/yoga9_image"
-                        android:src="@drawable/mindfullness"/>
+                        app:cardCornerRadius="80sp"
+                        app:cardElevation="20sp">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mindfullness"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga9_text"

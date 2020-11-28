@@ -9,6 +9,7 @@
     tools:context=".channel_yoga_list.yoga_channel1_list">
 
     <RelativeLayout
+        android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -29,6 +30,7 @@
             android:id="@+id/yogaChannel1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/yoga_toolbar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20sp"
             android:textColor="#4F7282"
@@ -64,12 +66,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga1_image"
-                        android:src="@drawable/tadasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga1_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tadasana"/>
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga1_text"
@@ -106,12 +113,19 @@
                     android:layout_height="match_parent">
 
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga2_image"
-                        android:src="@drawable/vrikshasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga2_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/vrikshasana"/>
+
+                    </androidx.cardview.widget.CardView>
+
 
                     <TextView
                         android:id="@+id/yoga2_text"
@@ -149,12 +163,18 @@
                     android:layout_height="match_parent">
 
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga3_image"
-                        android:src="@drawable/adho_mukho_svanasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga3_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/adho_mukho_svanasana"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga3_text"
@@ -191,12 +211,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga4_image"
-                        android:src="@drawable/balasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga4_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/balasana"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga4_text"
@@ -212,6 +238,7 @@
                         android:layout_marginEnd="20sp"
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
+
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -231,18 +258,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga5_image"
-                        android:src="@drawable/bhujangasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga5_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bhujangasana"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
 
                     <TextView
                         android:id="@+id/yoga5_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yoga 5"
+                        android:text="Bhujangasana"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -272,12 +307,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga6_image"
-                        android:src="@drawable/kursiasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga6_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kursiasana"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga6_text"
@@ -313,12 +354,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga7_image"
-                        android:src="@drawable/naukasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga7_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/naukasana"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga7_text"
@@ -354,12 +401,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga8_image"
-                        android:src="@drawable/paschimottanasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga8_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/paschimottanasana"/>
+
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/yoga8_text"
@@ -395,12 +448,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="150sp"
-                        android:layout_height="150sp"
-                        android:scaleType="centerCrop"
-                        android:id="@+id/yoga9_image"
-                        android:src="@drawable/trikonasana"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yoga9_image">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/trikonasana"/>
+
+                    </androidx.cardview.widget.CardView>
+
 
                     <TextView
                         android:id="@+id/yoga9_text"

@@ -14,9 +14,10 @@
             android:id="@+id/yoga_image"
             android:layout_width="match_parent"
             android:src="@drawable/yoga_image"
-            android:paddingTop="40dp"
+            android:paddingBottom="20sp"
+            android:paddingTop="20sp"
             android:layout_centerHorizontal="true"
-            android:layout_height="400sp"/>
+            android:layout_height="350sp"/>
 
         <TextView
             android:id="@+id/yogaText"
@@ -33,66 +34,31 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/yogaText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/yogaText"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/colorPrimary"
-            android:textAlignment="textEnd"
-            android:text="Yoga is also a kind of "
-            android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:id="@+id/yogaText3"
+            android:id="@+id/yogaDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/yogaText2"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="10dp"
-            android:textAlignment="textEnd"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/colorPrimary"
-            android:text="meditation which involves physical,"
-            android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="18sp"/>
+            android:layout_below="@+id/yoga_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-77dp"
+            android:textSize="20sp"
+            android:text="@string/Yoga_Description"
+            android:textColor="@color/colorPrimary" />
 
         <TextView
-            android:id="@+id/yogaText4"
+            android:id="@+id/yogaDescriptionSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/yogaText3"
-            android:layout_alignParentEnd="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="20sp"
-            android:textAlignment="textEnd"
-            android:layout_marginEnd="20dp"
-            android:textColor="@color/colorPrimary"
-            android:text="mental and spiritual practices. It helps"
-            android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="18sp"/>
-
-        <TextView
-            android:id="@+id/yogaText5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/yogaText4"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:textAlignment="textEnd"
-            android:textColor="@color/colorPrimary"
-            android:layout_marginBottom="31dp"
-            android:text="in all round development of the body and mind."
-            android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="18sp"/>
+            android:layout_below="@+id/yogaDescription"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp"
+            android:text="----- Yoga Vasistha 3.9.32 -----"
+            android:textColor="@color/colorPrimary" />
 
         <RelativeLayout
             android:id="@+id/yoga_channel1_layout"
-            android:layout_below="@+id/yogaText5"
+            android:layout_below="@+id/yogaDescriptionSource"
             android:layout_width="match_parent"
+            android:paddingTop="20sp"
             android:layout_height="match_parent">
 
             <TextView
@@ -100,14 +66,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Basic Poses for Beginners"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:layout_marginStart="20sp"
                 android:layout_marginBottom="15sp"
                 android:textStyle="bold"
-                android:textColor="#4F7282"
+                android:textColor="#fff"
                 android:fontFamily="@font/century_gothic"
-                android:paddingStart="10sp"
-                android:paddingEnd="30sp"/>
+                android:background="@drawable/channel_background"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"/>
 
             <HorizontalScrollView
                 android:id="@+id/yogaChannel1_card"
@@ -115,6 +82,7 @@
                 android:layout_marginStart="10sp"
                 android:layout_below="@id/yogaChannel1"
                 android:layout_marginBottom="20sp"
+                android:scrollbars="none"
                 android:layout_height="wrap_content">
 
                 <GridLayout
@@ -151,9 +119,11 @@
                                 android:layout_height="wrap_content"
                                 android:text="Tadasana"
                                 android:layout_gravity="bottom"
+                                android:fontFamily="@font/century_gothic"
                                 android:textAlignment="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
                                 android:layout_marginTop="12dp"/>
 
                         </LinearLayout>
@@ -190,9 +160,13 @@
                                 android:layout_height="match_parent"
                                 android:text="Vrikshasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
+
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -225,10 +199,15 @@
                                 android:layout_height="match_parent"
                                 android:text="Adho Mukho Svanasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
+
                         </LinearLayout>
+
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
@@ -260,8 +239,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Balasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -295,8 +277,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Bhujangasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -330,8 +315,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Kursiasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -365,8 +353,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Naukasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -400,8 +391,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Paschimottanasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -435,8 +429,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Trikonasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -459,12 +456,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20sp"
                 android:layout_marginBottom="15sp"
-                android:paddingStart="10sp"
-                android:paddingEnd="15sp"
                 android:text="Instructor"
-                android:textColor="#4F7282"
-                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:textSize="15sp"
                 android:fontFamily="@font/century_gothic"
+                android:background="@drawable/channel_background"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
                 android:textStyle="bold" />
 
             <HorizontalScrollView
@@ -473,6 +471,7 @@
                 android:layout_marginStart="10sp"
                 android:layout_below="@id/channel2"
                 android:layout_marginBottom="20sp"
+                android:scrollbars="none"
                 android:layout_height="wrap_content">
 
                 <GridLayout
@@ -489,7 +488,7 @@
                         android:layout_columnWeight="1"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
-                        android:id="@+id/focus_meditation"
+                        android:id="@+id/yoga1"
                         app:cardCornerRadius="20sp">
 
                         <ImageView
@@ -504,9 +503,11 @@
                             android:layout_height="wrap_content"
                             android:text="Tadasana"
                             android:layout_gravity="bottom"
+                            android:textColor="#000000"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/century_gothic"
+                            android:textStyle="bold"
                             android:textAlignment="center"
-                            android:textColor="#4F7282"
-                            android:textSize="18sp"
                             android:layout_marginTop="12dp"/>
 
 
@@ -521,7 +522,7 @@
                         app:cardBackgroundColor="#fff"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:id="@+id/mindfulness_meditation"
+                        android:id="@+id/yoga2"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -540,8 +541,11 @@
                                 android:layout_height="match_parent"
                                 android:text="Vrikshasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -555,7 +559,7 @@
                         app:cardBackgroundColor="#fff"
                         android:layout_rowWeight="1"
                         android:layout_columnWeight="1"
-                        android:id="@+id/spiritual_meditation"
+                        android:id="@+id/yoga3"
                         app:cardCornerRadius="20dp">
 
                         <LinearLayout
@@ -572,10 +576,92 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Adho Mukho Svanasana"
+                                android:text="Kursiasana"
                                 android:layout_gravity="center"
-                                android:textColor="#4F7282"
-                                android:textSize="18sp"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginTop="12dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:id="@+id/yoga4"
+                        app:cardCornerRadius="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/mindfullness"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Balasana"
+                                android:layout_gravity="center"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginTop="12dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardBackgroundColor="#fff"
+                        android:id="@+id/yoga5"
+                        app:cardCornerRadius="20sp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:layout_width="130sp"
+                                android:layout_height="130sp"
+                                android:src="@drawable/mindfullness"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bhujangasana"
+                                android:layout_gravity="bottom"
+                                android:textColor="#000000"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
                                 android:layout_marginTop="12dp"/>
 
                         </LinearLayout>
