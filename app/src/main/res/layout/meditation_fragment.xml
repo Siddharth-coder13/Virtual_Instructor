@@ -19,7 +19,6 @@
             android:layout_centerHorizontal="true"
             android:layout_height="350sp"/>
 
-
         <TextView
             android:id="@+id/meditation_text"
             android:layout_width="wrap_content"
@@ -108,8 +107,8 @@
                         app:cardCornerRadius="20sp">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:orientation="vertical">
 
 
@@ -262,7 +261,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_rowWeight="1"
                         app:cardBackgroundColor="#fff"
                         android:layout_columnWeight="1"
@@ -296,7 +295,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -334,7 +333,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="10dp"
+                        app:cardElevation="0dp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
