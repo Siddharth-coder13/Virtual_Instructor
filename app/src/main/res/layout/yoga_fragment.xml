@@ -25,8 +25,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/yoga_image"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="-125dp"
-            android:layout_marginEnd="89dp"
+            android:layout_marginTop="-131dp"
+            android:layout_marginEnd="53dp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="Yoga"
             android:textColor="#4F7282"
@@ -38,21 +38,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/yoga_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-77dp"
-            android:textSize="20sp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="-94dp"
             android:text="@string/Yoga_Description"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/yogaDescriptionSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/yogaDescription"
-            android:layout_centerHorizontal="true"
-            android:textSize="10sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="255dp"
             android:text="----- Yoga Vasistha 3.9.32 -----"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
 
         <RelativeLayout
             android:id="@+id/yoga_channel1_layout"

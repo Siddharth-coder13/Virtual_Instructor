@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="210sp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="Meditation"
             android:textColor="#4F7282"
@@ -41,8 +41,8 @@
             android:layout_alignParentEnd="true"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="20sp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="111dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="22dp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="@string/Meditation_Description"
             android:textAlignment="textStart"
@@ -54,10 +54,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/mediationDescription"
-            android:layout_centerHorizontal="true"
-            android:textSize="10sp"
             android:text="----- Patanjali Yoga Sutra 2.2 -----"
-            android:textColor="@color/colorPrimary" />
+            android:layout_marginLeft="250sp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
 
         <RelativeLayout
             android:id="@+id/med_channel1_layout"
