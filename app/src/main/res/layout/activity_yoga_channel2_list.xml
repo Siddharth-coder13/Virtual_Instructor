@@ -69,9 +69,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga1_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga1_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -118,9 +116,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga2_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga2_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -166,9 +162,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga3_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga3_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -214,9 +208,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga4_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga4_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -261,9 +253,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga5_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga5_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -309,9 +299,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga6_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga6_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -357,9 +345,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga7_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga7_image">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -405,15 +391,13 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga8_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga8_image">
 
                         <ImageView
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/tadasana"/>
+                            android:src="@drawable/mindfullness"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -453,9 +437,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga9_image"
-                        app:cardCornerRadius="80sp"
-                        app:cardElevation="20sp">
+                        android:id="@+id/yoga9_image">
 
                         <ImageView
                             android:layout_width="100sp"
