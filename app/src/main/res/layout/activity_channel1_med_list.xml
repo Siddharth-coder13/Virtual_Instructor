@@ -67,8 +67,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/med1_image"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="12dp">
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -77,8 +76,6 @@
                             android:src="@drawable/focus"/>
 
                     </androidx.cardview.widget.CardView>
-
-
 
                     <TextView
                         android:id="@+id/med1_text"
@@ -120,8 +117,7 @@
                     <androidx.cardview.widget.CardView
                         android:id="@+id/med2_image"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardCornerRadius="12dp">
+                        android:layout_height="wrap_content">
 
                         <ImageView
                             android:layout_width="100sp"
@@ -168,7 +164,6 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/med3_image"
-                        app:cardCornerRadius="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -216,7 +211,6 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/med4_image"
-                        app:cardCornerRadius="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -264,7 +258,6 @@
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/med5_image"
-                        app:cardCornerRadius="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -313,7 +306,6 @@
                     android:layout_height="match_parent">
 
                     <androidx.cardview.widget.CardView
-                        app:cardCornerRadius="12dp"
                         android:id="@+id/med6_image"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">

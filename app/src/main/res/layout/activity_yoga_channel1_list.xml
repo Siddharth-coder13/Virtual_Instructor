@@ -75,6 +75,7 @@
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/tadasana"/>
+
                     </androidx.cardview.widget.CardView>
 
                     <TextView
