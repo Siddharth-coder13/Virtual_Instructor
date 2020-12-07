@@ -32,7 +32,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/yoga_toolbar"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20sp"
             android:textColor="#4F7282"
             android:text="Basic Poses for beginners"
             android:textStyle="bold"

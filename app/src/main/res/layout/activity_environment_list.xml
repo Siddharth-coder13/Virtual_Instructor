@@ -31,7 +31,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20sp"
             android:textColor="#4F7282"
             android:text="Channel 1"
             android:textStyle="bold"
@@ -71,8 +70,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="150sp"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/hills"/>
 
@@ -120,8 +119,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="150sp"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/mountain"/>
 
@@ -168,8 +167,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="150sp"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/space"/>
 
@@ -216,8 +215,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="150sp"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/android"/>
 
@@ -239,8 +238,6 @@
                         android:textColor="#4F7282"/>
 
                 </RelativeLayout>
-
-
 
             </androidx.cardview.widget.CardView>
 
@@ -265,8 +262,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="150sp"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/android"/>
 
@@ -312,8 +309,8 @@
                         android:layout_height="wrap_content">
 
                         <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="150sp"
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/android"/>
 

@@ -32,7 +32,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20sp"
             android:textColor="#4F7282"
             android:text="Channel 1"
             android:textStyle="bold"
