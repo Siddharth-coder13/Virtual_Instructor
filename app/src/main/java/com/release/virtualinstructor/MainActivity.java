@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         final ImageView yoga = findViewById(R.id.yoga_tab);
 
         //to start with yoga fragment
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,new meditation_fragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new meditation_fragment()).commit();
 
         //bottom navigation view
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);

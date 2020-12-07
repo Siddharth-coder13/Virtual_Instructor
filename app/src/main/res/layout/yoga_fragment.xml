@@ -26,7 +26,7 @@
             android:layout_below="@id/yoga_image"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="-125dp"
-            android:layout_marginEnd="89dp"
+            android:layout_marginEnd="50sp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="Yoga"
             android:textColor="#4F7282"
@@ -38,8 +38,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/yoga_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="-77dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="-85dp"
             android:textSize="20sp"
             android:text="@string/Yoga_Description"
             android:textColor="@color/colorPrimary" />
@@ -49,7 +50,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/yogaDescription"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25sp"
             android:textSize="10sp"
             android:text="----- Yoga Vasistha 3.9.32 -----"
             android:textColor="@color/colorPrimary" />
@@ -93,7 +95,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_gravity="fill"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
@@ -133,7 +137,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -173,7 +179,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -213,7 +221,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -251,7 +261,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -289,7 +301,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -327,7 +341,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -365,7 +381,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -403,7 +421,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -482,7 +502,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_rowWeight="1"
                         app:cardBackgroundColor="#fff"
                         android:layout_columnWeight="1"
@@ -516,7 +538,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -553,7 +577,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -589,11 +615,12 @@
 
                     </androidx.cardview.widget.CardView>
 
-
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -632,7 +659,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_gravity="fill"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
+   <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="210sp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="Meditation"
             android:textColor="#4F7282"
@@ -38,13 +38,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/meditation_text"
             android:layout_alignParentEnd="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="20sp"
-            android:layout_marginTop="36dp"
-            android:layout_marginEnd="111dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/myriad_pro_regular"
             android:text="@string/Meditation_Description"
-            android:textAlignment="textStart"
+            android:textAlignment="textEnd"
             android:textColor="@color/colorPrimary"
             android:textSize="20sp" />
 
@@ -52,10 +50,11 @@
             android:id="@+id/mediationDescriptionSource"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/mediationDescription"
-            android:layout_centerHorizontal="true"
-            android:textSize="10sp"
+            android:layout_marginEnd="20sp"
             android:text="----- Patanjali Yoga Sutra 2.2 -----"
+            android:layout_below="@+id/mediationDescription"
+            android:layout_alignParentEnd="true"
+            android:textSize="10sp"
             android:textColor="@color/colorPrimary" />
 
         <RelativeLayout
@@ -89,7 +88,7 @@
                 android:layout_marginBottom="20sp"
                 android:layout_height="wrap_content">
 
-                <GridLayout
+               <GridLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:rowCount="1">
@@ -98,7 +97,9 @@
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
                         android:layout_rowWeight="1"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
                         android:layout_marginStart="15dp"
@@ -138,7 +139,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -177,7 +180,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -261,7 +266,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_rowWeight="1"
                         app:cardBackgroundColor="#fff"
                         android:layout_columnWeight="1"
@@ -295,7 +302,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
@@ -333,7 +342,9 @@
                     <androidx.cardview.widget.CardView
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        app:cardElevation="0dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="5sp"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         app:cardBackgroundColor="#fff"
