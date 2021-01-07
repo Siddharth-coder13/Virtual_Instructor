@@ -93,6 +93,17 @@
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga1_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
+
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -141,6 +152,17 @@
                         android:layout_marginEnd="20sp"
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga2_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
 
                 </RelativeLayout>
 
@@ -191,6 +213,17 @@
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga3_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
+
                 </RelativeLayout>
 
 
@@ -238,6 +271,17 @@
                         android:layout_marginEnd="20sp"
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga4_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
 
                 </RelativeLayout>
 
@@ -288,6 +332,17 @@
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga5_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
+
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -334,6 +389,17 @@
                         android:layout_marginEnd="20sp"
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga6_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
 
                 </RelativeLayout>
 
@@ -382,6 +448,17 @@
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga7_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
+
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -428,6 +505,17 @@
                         android:layout_marginEnd="20sp"
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga8_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
 
                 </RelativeLayout>
 
@@ -476,6 +564,17 @@
                         android:layout_marginEnd="20sp"
                         android:textAlignment="center"
                         android:textColor="#4F7282"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming soon"
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@id/yoga9_image"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="#FF0000"/>
 
                 </RelativeLayout>
 
