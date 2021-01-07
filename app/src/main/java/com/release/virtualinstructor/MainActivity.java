@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         final ImageView meditation = findViewById(R.id.meditation_tab);
         final ImageView yoga = findViewById(R.id.yoga_tab);
+        LinearLayout share = findViewById(R.id.share);
 
         //to start with yoga fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new meditation_fragment()).commit();
@@ -107,5 +111,23 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
          });*/
+
+        //share the app link using share button
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                    shareIntent.setType("text/plain");
+                    shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Virtual Instructor");
+                    String shareMessage= "\nDownload the app and meditate in virtual reality.\n\n";
+                    shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID +"\n";
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                    startActivity(Intent.createChooser(shareIntent, "choose one"));
+                } catch(Exception e) {
+                    //e.toString();
+                }
+            }
+        });
     }
 }

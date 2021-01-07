@@ -13,54 +13,17 @@
         <ImageView
             android:id="@+id/yoga_image"
             android:layout_width="match_parent"
-            android:src="@drawable/yoga_image"
             android:paddingBottom="20sp"
             android:paddingTop="20sp"
+            android:src="@drawable/yogagrp"
             android:layout_centerHorizontal="true"
             android:layout_height="350sp"/>
 
-        <TextView
-            android:id="@+id/yogaText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/yoga_image"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="-125dp"
-            android:layout_marginEnd="50sp"
-            android:fontFamily="@font/myriad_pro_regular"
-            android:text="Yoga"
-            android:textColor="#4F7282"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/yogaDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/yoga_image"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20sp"
-            android:layout_marginTop="-85dp"
-            android:textSize="20sp"
-            android:text="@string/Yoga_Description"
-            android:textColor="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/yogaDescriptionSource"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/yogaDescription"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="25sp"
-            android:textSize="10sp"
-            android:text="----- Yoga Vasistha 3.9.32 -----"
-            android:textColor="@color/colorPrimary" />
-
         <RelativeLayout
             android:id="@+id/yoga_channel1_layout"
-            android:layout_below="@+id/yogaDescriptionSource"
+            android:layout_below="@id/yoga_image"
             android:layout_width="match_parent"
-            android:paddingTop="20sp"
+            android:paddingTop="5sp"
             android:layout_height="match_parent">
 
             <TextView

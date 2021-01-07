@@ -29,7 +29,7 @@ public class meditation_fragment extends Fragment {
         CardView focus_meditation = v.findViewById(R.id.focus_meditation); TextView focus = v.findViewById(R.id.focus);
         CardView mindfullness_meditation = v.findViewById(R.id.mindfulness_meditation); TextView minfullness = v.findViewById(R.id.mindfulness);
         CardView spiritual_meditation = v.findViewById(R.id.spiritual_meditation); TextView spiritual = v.findViewById(R.id.spiritual);
-
+        final CardView youtube = v.findViewById(R.id.youtube);
 
         channel1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +48,13 @@ public class meditation_fragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), channel2_med_list.class);
                 startActivity(i);
+            }
+        });*/
+
+        /*youtube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), youtube.class));
             }
         });*/
 

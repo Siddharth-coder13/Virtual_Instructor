@@ -11,56 +11,13 @@
         <ImageView
             android:id="@+id/meditation_image"
             android:layout_width="match_parent"
-            android:scaleType="fitStart"
-            android:paddingEnd="20sp"
-            android:paddingBottom="20sp"
-            android:paddingTop="20sp"
-            android:src="@drawable/med_image"
+            android:src="@drawable/medigrp"
             android:layout_centerHorizontal="true"
             android:layout_height="350sp"/>
 
-        <TextView
-            android:id="@+id/meditation_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="210sp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/myriad_pro_regular"
-            android:text="Meditation"
-            android:textColor="#4F7282"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/mediationDescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/meditation_text"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:fontFamily="@font/myriad_pro_regular"
-            android:text="@string/Meditation_Description"
-            android:textAlignment="textEnd"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/mediationDescriptionSource"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20sp"
-            android:text="----- Patanjali Yoga Sutra 2.2 -----"
-            android:layout_below="@+id/mediationDescription"
-            android:layout_alignParentEnd="true"
-            android:textSize="10sp"
-            android:textColor="@color/colorPrimary" />
-
         <RelativeLayout
             android:id="@+id/med_channel1_layout"
-            android:layout_below="@id/mediationDescriptionSource"
-            android:layout_marginTop="20sp"
+            android:layout_below="@id/meditation_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -274,7 +231,7 @@
                         android:layout_columnWeight="1"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
-                        android:id="@+id/focus1_meditation"
+                        android:id="@+id/youtube"
                         app:cardCornerRadius="20sp">
 
                         <ImageView
