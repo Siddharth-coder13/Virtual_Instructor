@@ -25,7 +25,6 @@ public class yoga_fragment extends Fragment {
 //
 //    ArrayList<String> list;
 //    ArrayAdapter<String> adapter;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -40,6 +39,7 @@ public class yoga_fragment extends Fragment {
         CardView asana7 = v.findViewById(R.id.asana7_yoga); TextView nauka = v.findViewById(R.id.nauka);
         CardView asana8 = v.findViewById(R.id.asana8_yoga); TextView paschim = v.findViewById(R.id.paschim);
         CardView asana9 = v.findViewById(R.id.asana9_yoga); TextView trikon = v.findViewById(R.id.trikon);
+
 
 //        searchView = (SearchView) v.findViewById(R.id.yogaSearch);
 //        yogaList = (ListView) v.findViewById(R.id.yogaList);
@@ -105,6 +105,7 @@ public class yoga_fragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(),environment_list.class);
                 i.putExtra("heading",heading.getText().toString());
+                i.putExtra("coming", "coming");
                 startActivity(i);
             }
         });

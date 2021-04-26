@@ -76,6 +76,7 @@ public class yoga_channel1_list extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(yoga_channel1_list.this, environment_list.class);
                 i.putExtra("heading",text.getText().toString());
+                i.putExtra("coming", "coming");
                 startActivity(i);
             }
         });

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:text="WELCOME!!"
+        android:textSize="30sp"
+        android:fontFamily="@font/candara"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/glad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help us to know you better by filing below :)"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/candara"
+        android:layout_below="@id/welcome_back"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:hint="Name"
+            android:fontFamily="@font/candara"
+            android:textSize="25sp"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="0dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:hint="Age"
+            android:layout_below="@id/name"
+            android:fontFamily="@font/candara"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="0dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <LinearLayout
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="48sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:layout_below="@id/age"
+            android:layout_marginTop="20sp"
+            android:paddingTop="5dp"
+            android:paddingStart="20sp"
+            android:paddingEnd="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/edit_text_bg">
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="25sp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/candara"
+                android:checked="true"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <RadioButton
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="25sp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/candara"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:hint="Email ID"
+            android:layout_below="@id/gender"
+            android:fontFamily="@font/candara"
+            android:textSize="25sp"
+            android:layout_marginTop="20sp"
+            android:paddingBottom="5sp"
+            android:paddingTop="5sp"
+            android:paddingStart="20sp"
+            android:paddingEnd="0dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="30sp"
+            android:hint="Password"
+            android:textSize="25sp"
+            android:fontFamily="@font/candara"
+            android:paddingStart="20sp"
+            android:layout_marginTop="20sp"
+            android:paddingEnd="0dp"
+            android:paddingTop="5dp"
+            android:inputType="textPassword"
+            android:paddingBottom="5dp"
+            android:layout_below="@id/email_id"
+            android:background="@drawable/edit_text_bg"/>
+
+        <Button
+            android:id="@+id/register"
+            android:text="Start"
+            android:layout_below="@id/password"
+            android:layout_marginTop="40sp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/candara"
+            android:background="@drawable/checked_bg"
+            android:paddingStart="20sp"
+            android:elevation="10sp"
+            android:textColor="@color/white"
+            android:paddingEnd="20sp"
+            android:textAllCaps="false"
+            android:layout_width="130sp"
+            android:layout_height="35sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

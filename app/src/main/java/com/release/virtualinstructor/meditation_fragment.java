@@ -26,9 +26,9 @@ public class meditation_fragment extends Fragment {
 
         RelativeLayout channel1 = v.findViewById(R.id.med_channel1_layout);
         RelativeLayout channel2 = v.findViewById(R.id.med_channel2_layout);
-        CardView focus_meditation = v.findViewById(R.id.focus_meditation); TextView focus = v.findViewById(R.id.focus);
-        CardView mindfullness_meditation = v.findViewById(R.id.mindfulness_meditation); TextView minfullness = v.findViewById(R.id.mindfulness);
-        CardView spiritual_meditation = v.findViewById(R.id.spiritual_meditation); TextView spiritual = v.findViewById(R.id.spiritual);
+        CardView focus_meditation = v.findViewById(R.id.focus_meditation); TextView focus = v.findViewById(R.id.focus1);
+        CardView mindfullness_meditation = v.findViewById(R.id.mindfulness_meditation); TextView minfullness = v.findViewById(R.id.mindfulness1);
+        CardView spiritual_meditation = v.findViewById(R.id.spiritual_meditation); TextView spiritual = v.findViewById(R.id.spiritual1);
         final CardView youtube = v.findViewById(R.id.youtube);
 
         channel1.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +68,7 @@ public class meditation_fragment extends Fragment {
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(),environment_list.class);
                 i.putExtra("heading",heading.getText().toString());
+                i.putExtra("coming", "false");
                 startActivity(i);
             }
         });

@@ -56,6 +56,7 @@ public class channel1_med_list extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(channel1_med_list.this, environment_list.class);
                 i.putExtra("heading",text.getText().toString());
+                i.putExtra("coming", "false");
                 startActivity(i);
             }
         });

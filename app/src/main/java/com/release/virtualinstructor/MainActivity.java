@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
         final ImageView meditation = findViewById(R.id.meditation_tab);
         final ImageView yoga = findViewById(R.id.yoga_tab);
-        LinearLayout share = findViewById(R.id.share);
+        final LinearLayout share = findViewById(R.id.share);
+        ImageView three_dots = findViewById(R.id.three_dots);
 
         //to start with yoga fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new meditation_fragment()).commit();
@@ -111,6 +112,19 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
          });*/
+
+        //show share button
+        three_dots.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(share.getVisibility()==View.GONE){
+                    share.setVisibility(View.VISIBLE);
+                }else if(share.getVisibility()==View.VISIBLE){
+                    share.setVisibility(View.GONE);
+                }
+            }
+        });
+
 
         //share the app link using share button
         share.setOnClickListener(new View.OnClickListener() {

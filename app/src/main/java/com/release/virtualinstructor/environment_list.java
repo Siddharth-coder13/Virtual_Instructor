@@ -18,6 +18,8 @@ public class environment_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_environment_list);
 
+        TextView come = findViewById(R.id.coming_soon);
+
         //This java code displays the different types of virtual environment available to us for practicing yoga and meditation.
 
         //close activity
@@ -32,6 +34,11 @@ public class environment_list extends AppCompatActivity {
         //To display meditation name in heading
         Intent i = getIntent();
         String heading = i.getStringExtra("heading");
+        String coming =  "c";
+        coming = i.getStringExtra("coming");
+        if(coming.equals("coming")){
+            come.setVisibility(View.VISIBLE);
+        }
         TextView head = findViewById(R.id.heading);
         head.setText(heading);
 
