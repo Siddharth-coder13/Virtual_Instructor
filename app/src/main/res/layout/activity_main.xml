@@ -7,7 +7,7 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <!--Contains both the fragment-->
+    <!-- This xml file is the home screen of the app. It contains both meditation and yoga fragment. -->
 
     <FrameLayout
 

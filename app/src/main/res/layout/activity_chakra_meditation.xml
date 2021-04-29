@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Chakra_meditation">
 
+    <!-- This xml file contains different types of chakras -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

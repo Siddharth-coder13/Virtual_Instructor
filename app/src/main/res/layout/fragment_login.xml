@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".login_fragment">
 
+    <!-- It is the login fragment. -->
+
     <TextView
         android:id="@+id/welcome_back"
         android:layout_width="wrap_content"

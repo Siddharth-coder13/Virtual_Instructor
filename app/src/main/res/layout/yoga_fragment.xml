@@ -6,6 +6,8 @@
     android:scrollbars="none"
     android:background="#fff">
 
+    <!-- This is the yoga fragment. -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

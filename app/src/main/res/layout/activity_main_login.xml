@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".login_page">
 
+    <!-- This xml file is the main authentication screen. It contains app login and register fragments. -->
+
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
