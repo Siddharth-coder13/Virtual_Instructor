@@ -11,7 +11,7 @@ public class login_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_page);
+        setContentView(R.layout.activity_main_login);
 
         // To start with login_fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new login_fragment()).commit();

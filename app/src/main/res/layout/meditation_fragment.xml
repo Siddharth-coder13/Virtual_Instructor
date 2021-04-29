@@ -76,14 +76,383 @@
 
        </androidx.cardview.widget.CardView>
 
-        <RelativeLayout
+       <RelativeLayout
+           android:id="@+id/chakra_meditation_layout"
+           android:layout_below="@id/meditation_image"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/c1"
+               android:layout_width="30sp"
+               android:layout_height="30sp"
+               android:layout_marginStart="20sp"
+               android:background="@drawable/channel_background"
+               />
+
+           <TextView
+               android:id="@+id/chakra_meditation"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Chakra Meditation"
+               android:textSize="25sp"
+               android:fontFamily="@font/myriad_pro_regular"
+               android:layout_marginStart="5sp"
+               android:layout_marginBottom="15sp"
+               android:textStyle="bold"
+               android:layout_toEndOf="@id/c1"
+               android:textColor="@color/colorPrimary"
+               android:paddingStart="15sp"
+               android:paddingTop="3sp"
+               android:paddingEnd="35sp"/>
+
+           <HorizontalScrollView
+               android:id="@+id/channel1_card"
+               android:layout_width="wrap_content"
+               android:layout_marginStart="10sp"
+               android:layout_below="@id/chakra_meditation"
+               android:scrollbars="none"
+               android:layout_marginBottom="20sp"
+               android:layout_height="wrap_content">
+
+               <GridLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:rowCount="1">
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_rowWeight="1"
+                       android:layout_marginTop="5sp"
+                       android:layout_columnWeight="1"
+                       android:layout_gravity="fill"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:id="@+id/chkara_card1"
+                       app:cardCornerRadius="20sp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical">
+
+
+                           <ImageView
+                               android:layout_width="130sp"
+                               android:layout_height="130sp"
+                               android:src="@drawable/chakra_muladara"
+                               android:scaleType="centerCrop"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card1_text1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Muladara"
+                               android:layout_gravity="bottom"
+                               android:fontFamily="@font/century_gothic"
+                               android:textAlignment="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textSize="15sp"
+                               android:textStyle="bold"
+                               android:layout_marginTop="12dp"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card1_text2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Chakra"
+                               android:layout_gravity="bottom"
+                               android:fontFamily="@font/century_gothic"
+                               android:textAlignment="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textSize="15sp"
+                               android:textStyle="bold"/>
+
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="5sp"
+                       android:layout_marginBottom="5sp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       app:cardBackgroundColor="#fff"
+                       android:background="@color/colorPrimary"
+                       android:layout_rowWeight="1"
+                       android:layout_columnWeight="1"
+                       android:id="@+id/chakra_card2"
+                       app:cardCornerRadius="20dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="130sp"
+                               android:layout_height="130sp"
+                               android:src="@drawable/chakra_swadhisthana"
+                               android:scaleType="centerCrop"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card2_text1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Swadhisthana"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textSize="15sp"
+                               android:fontFamily="@font/century_gothic"
+                               android:textStyle="bold"
+                               android:textAlignment="center"
+                               android:layout_marginTop="12dp"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card2_text2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Chakra"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textSize="15sp"
+                               android:fontFamily="@font/century_gothic"
+                               android:textStyle="bold"
+                               android:textAlignment="center"/>
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="5sp"
+                       android:layout_marginBottom="5sp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       app:cardBackgroundColor="#fff"
+                       android:layout_rowWeight="1"
+                       android:layout_columnWeight="1"
+                       android:id="@+id/chakra_card3"
+                       app:cardCornerRadius="20dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="130sp"
+                               android:layout_height="130sp"
+                               android:src="@drawable/chakra_manipura"
+                               android:scaleType="centerCrop"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card3_text1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Manipura"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"
+                               android:layout_marginTop="12dp"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card3_text2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Chakra"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"/>
+
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="5sp"
+                       android:layout_marginBottom="5sp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       app:cardBackgroundColor="#fff"
+                       android:layout_rowWeight="1"
+                       android:layout_columnWeight="1"
+                       android:id="@+id/chakra_card4"
+                       app:cardCornerRadius="20dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="130sp"
+                               android:layout_height="130sp"
+                               android:src="@drawable/chakra_anahata"
+                               android:scaleType="centerCrop"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card4_text1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Anahata"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"
+                               android:layout_marginTop="12dp"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card4_text2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Chakra"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"/>
+
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="5sp"
+                       android:layout_marginBottom="5sp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       app:cardBackgroundColor="#fff"
+                       android:layout_rowWeight="1"
+                       android:layout_columnWeight="1"
+                       android:id="@+id/chakra_card5"
+                       app:cardCornerRadius="20dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="130sp"
+                               android:layout_height="130sp"
+                               android:src="@drawable/chakra_vishuddha"
+                               android:scaleType="centerCrop"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card5_text1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Vishuddha"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"
+                               android:layout_marginTop="12dp"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card5_text2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Chakra"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"/>
+
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:layout_height="wrap_content"
+                       android:layout_width="wrap_content"
+                       android:layout_marginTop="5sp"
+                       android:layout_marginBottom="5sp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       app:cardBackgroundColor="#fff"
+                       android:layout_rowWeight="1"
+                       android:layout_columnWeight="1"
+                       android:id="@+id/chakra_card6"
+                       app:cardCornerRadius="20dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="vertical">
+
+                           <ImageView
+                               android:layout_width="130sp"
+                               android:layout_height="130sp"
+                               android:src="@drawable/chakra_ajna"
+                               android:scaleType="centerCrop"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card6_text1"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Ajna"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"
+                               android:layout_marginTop="12dp"/>
+
+                           <TextView
+                               android:id="@+id/chakra_card6_text2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Chakra"
+                               android:layout_gravity="center"
+                               android:textColor="@color/colorPrimary"
+                               android:textAlignment="center"
+                               android:fontFamily="@font/century_gothic"
+                               android:textSize="15sp"
+                               android:textStyle="bold"/>
+
+                       </LinearLayout>
+
+                   </androidx.cardview.widget.CardView>
+
+
+               </GridLayout>
+
+           </HorizontalScrollView>
+
+
+       </RelativeLayout>
+
+       <RelativeLayout
             android:id="@+id/med_channel1_layout"
-            android:layout_below="@id/meditation_image"
+            android:layout_below="@id/chakra_meditation_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/c1"
+                android:id="@+id/c2"
                 android:layout_width="30sp"
                 android:layout_height="30sp"
                 android:layout_marginStart="20sp"
@@ -100,7 +469,7 @@
                 android:layout_marginStart="5sp"
                 android:layout_marginBottom="15sp"
                 android:textStyle="bold"
-                android:layout_toEndOf="@id/c1"
+                android:layout_toEndOf="@id/c2"
                 android:textColor="@color/colorPrimary"
                 android:paddingStart="15sp"
                 android:paddingTop="3sp"
@@ -285,14 +654,14 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
+       <RelativeLayout
             android:id="@+id/med_channel2_layout"
             android:layout_width="match_parent"
             android:layout_below="@id/med_channel1_layout"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/c2"
+                android:id="@+id/c3"
                 android:layout_width="30sp"
                 android:layout_height="30sp"
                 android:layout_marginStart="20sp"
@@ -308,7 +677,7 @@
                 android:paddingStart="15sp"
                 android:fontFamily="@font/myriad_pro_regular"
                 android:paddingEnd="35sp"
-                android:layout_toEndOf="@id/c2"
+                android:layout_toEndOf="@id/c3"
                 android:text="Coming Soon"
                 android:paddingTop="3dp"
                 android:textColor="@color/colorPrimary"

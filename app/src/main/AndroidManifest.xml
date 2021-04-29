@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".login_fragment"></activity>
+        <activity android:name=".Chakra_meditation"></activity>
+        <activity android:name=".login_fragment" />
         <activity android:name=".login_page" />
         <activity android:name=".spalsh_activity">
             <intent-filter>
