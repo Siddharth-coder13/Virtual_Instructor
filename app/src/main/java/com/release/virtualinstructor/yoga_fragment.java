@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -78,8 +79,7 @@ public class yoga_fragment extends Fragment {
         yogaChannel2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), yoga_channel2_list.class);
-                startActivity(i);
+                Toast.makeText(getActivity(), "Coming soon", Toast.LENGTH_SHORT).show();
             }
         });
 

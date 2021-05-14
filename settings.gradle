@@ -1,2 +1,2 @@
-include ':app', ':Environment'
+include ':app'
 rootProject.name='Virtual Instructor'

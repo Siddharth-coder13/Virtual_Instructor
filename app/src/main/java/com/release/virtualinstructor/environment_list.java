@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.VirtualInstructor.mounteverest.UnityPlayerActivity;
 
 public class environment_list extends AppCompatActivity {
 
@@ -47,20 +47,10 @@ public class environment_list extends AppCompatActivity {
         CardView mountain = findViewById(R.id.mountain);
         CardView space = findViewById(R.id.space);
 
-        openVR(forest,"Forest");
-        openVR(mountain,"MountEverest");
-        openVR(space,"Space");
 
     }
 
-    private void openVR(CardView cardView,final String text){
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(environment_list.this, unityHolder.class);
-                i.putExtra("code",text);
-                startActivity(i);
-            }
-        });
+    private void OpenYoutube(CardView cardView){
+        Toast.makeText(this, "Environment is not added yet", Toast.LENGTH_SHORT).show();
     }
 }

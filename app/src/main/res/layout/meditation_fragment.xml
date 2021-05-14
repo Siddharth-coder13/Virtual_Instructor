@@ -127,11 +127,12 @@
                        android:layout_width="wrap_content"
                        android:layout_rowWeight="1"
                        android:layout_marginTop="5sp"
+                       android:layout_marginBottom="5sp"
                        android:layout_columnWeight="1"
                        android:layout_gravity="fill"
                        android:layout_marginStart="10dp"
                        android:layout_marginEnd="10dp"
-                       android:id="@+id/chkara_card1"
+                       android:id="@+id/chakra_card1"
                        app:cardCornerRadius="20sp">
 
                        <LinearLayout
@@ -496,6 +497,7 @@
                         android:layout_width="wrap_content"
                         android:layout_rowWeight="1"
                         android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
                         android:layout_columnWeight="1"
                         android:layout_gravity="fill"
                         android:layout_marginStart="10dp"

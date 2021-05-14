@@ -14,7 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".Chakra_meditation"></activity>
+        <activity android:name=".Youtube"
+            android:screenOrientation="landscape"
+            ></activity>
+        <activity android:name=".Chakra_meditation" />
         <activity android:name=".login_fragment" />
         <activity android:name=".login_page" />
         <activity android:name=".spalsh_activity">
@@ -24,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".unityHolder" />
         <activity android:name=".environment_list" />
         <activity android:name=".med_channel_list.channel2_med_list" />
         <activity android:name=".med_channel_list.channel1_med_list" />

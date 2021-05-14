@@ -17,6 +17,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     ArrayList<String> list;
     ArrayList<String> temp;
+    FirebaseAuth mAuth;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +39,25 @@ public class MainActivity extends AppCompatActivity {
         final ImageView meditation = findViewById(R.id.meditation_tab);
         final ImageView yoga = findViewById(R.id.yoga_tab);
         final LinearLayout share = findViewById(R.id.share);
-        ImageView three_dots = findViewById(R.id.three_dots);
+        //ImageView three_dots = findViewById(R.id.three_dots);
 
-        //to start with yoga fragment
+        // Firebase Authentication
+        mAuth = FirebaseAuth.getInstance();
+        mAuth.addAuthStateListener(new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                user = mAuth.getCurrentUser();
+                if(user!=null){
+                }
+                else{
+                    startActivity(new Intent(MainActivity.this, login_page.class));
+                    finish();
+                }
+
+            }
+        });
+
+        //to start with meditation fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new meditation_fragment()).commit();
 
         //bottom navigation view
@@ -114,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
          });*/
 
         //show share button
-        three_dots.setOnClickListener(new View.OnClickListener() {
+        /*three_dots.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(share.getVisibility()==View.GONE){
@@ -123,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
                     share.setVisibility(View.GONE);
                 }
             }
-        });
+        });*/
 
 
         //share the app link using share button
