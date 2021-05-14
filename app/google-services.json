@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "316596712267",
+    "project_id": "virtual-instructor-b11f2",
+    "storage_bucket": "virtual-instructor-b11f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316596712267:android:8af29dbbad44a63b6f6ece",
+        "android_client_info": {
+          "package_name": "com.release.virtualinstructor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316596712267-ev4o8pp60bguurb3gre0i1dgi3i8mf0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2xAWUu15TOMEWzHTPYU86EPEHK4C6Vww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316596712267-ev4o8pp60bguurb3gre0i1dgi3i8mf0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
