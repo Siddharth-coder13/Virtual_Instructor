@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:textColor="#4F7282"
-            android:text="Channel 1"
+            android:text="IIT Roorkee"
             android:textStyle="bold"
             android:fontFamily="@font/myriad_pro_regular"
             android:textSize="25sp"/>
@@ -50,7 +50,7 @@
             android:layout_marginEnd="20sp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/channel1_med1"
+                android:id="@+id/main_building"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 app:cardElevation="10sp"
@@ -73,7 +73,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/focus"/>
+                            android:src="@drawable/android"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -81,7 +81,7 @@
                         android:id="@+id/med1_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Focus Meditation"
+                        android:text="Msin building"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -100,7 +100,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/channel1_med2"
+                android:id="@+id/vigyan_kunj"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 app:cardElevation="10sp"
@@ -123,7 +123,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -132,7 +132,7 @@
                         android:id="@+id/med2_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Spiritual Meditation"
+                        android:text="Vigyan Kunj"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
@@ -147,7 +147,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
+           <!-- <androidx.cardview.widget.CardView
                 android:id="@+id/channel1_med3"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -335,7 +335,7 @@
 
                 </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>-->
 
         </GridLayout>
 

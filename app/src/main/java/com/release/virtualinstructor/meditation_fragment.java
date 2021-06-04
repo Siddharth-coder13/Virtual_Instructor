@@ -25,12 +25,11 @@ public class meditation_fragment extends Fragment {
         View v =  inflater.inflate(R.layout.meditation_fragment,container,false);
 
 
-        RelativeLayout channel1 = v.findViewById(R.id.med_channel1_layout);
+        RelativeLayout IITR = v.findViewById(R.id.med_channel1_layout);
         RelativeLayout channel2 = v.findViewById(R.id.med_channel2_layout);
         RelativeLayout chakra_meditation = v.findViewById(R.id.chakra_meditation_layout);
-        CardView focus_meditation = v.findViewById(R.id.focus_meditation); TextView focus = v.findViewById(R.id.focus1);
-        CardView mindfullness_meditation = v.findViewById(R.id.mindfulness_meditation); TextView minfullness = v.findViewById(R.id.mindfulness1);
-        CardView spiritual_meditation = v.findViewById(R.id.spiritual_meditation); TextView spiritual = v.findViewById(R.id.spiritual1);
+        CardView Main_building = v.findViewById(R.id.focus_meditation);
+        CardView vigyan_kunj = v.findViewById(R.id.mindfulness_meditation);
 
         // Variables
         CardView muladhara_chakra = v.findViewById(R.id.chakra_card1);
@@ -41,7 +40,7 @@ public class meditation_fragment extends Fragment {
         CardView ajna_chakra = v.findViewById(R.id.chakra_card6);
 
 
-        channel1.setOnClickListener(new View.OnClickListener() {
+        IITR.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(), channel1_med_list.class);
@@ -64,16 +63,16 @@ public class meditation_fragment extends Fragment {
             }
         });
 
-        open(focus_meditation,focus);
-        open(mindfullness_meditation,minfullness);
-        open(spiritual_meditation,spiritual);
+
         // Open youtube
-        OpenYoutube(manipura_chakra, "");
-        OpenYoutube(muladhara_chakra, "AuGIHznyuXk");
-        OpenYoutube(swadhisthana_chakra, "");
-        OpenYoutube(anhata_chakra, "");
-        OpenYoutube(vishuddha_chakra, "");
-        OpenYoutube(ajna_chakra, "");
+        OpenYoutube(manipura_chakra, "QnzgRDrkRHU");
+        OpenYoutube(muladhara_chakra, "BgauOifrvtc");
+        OpenYoutube(swadhisthana_chakra, "B_I3xg0gyx4");
+        OpenYoutube(anhata_chakra, "pJ86HzNuTh4");
+        OpenYoutube(vishuddha_chakra, "wdlfsoO0Bhc");
+        OpenYoutube(ajna_chakra, "ABf7dgGl9ZM");
+        OpenYoutube(Main_building, "kDW97yaxCss");
+        OpenYoutube(vigyan_kunj, "eonqVdpqEDU");
 
         /*channel2.setOnClickListener(new View.OnClickListener() {
             @Override

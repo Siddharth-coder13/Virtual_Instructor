@@ -33,12 +33,12 @@ public class Chakra_meditation extends AppCompatActivity {
         CardView vishuddha_chakra = findViewById(R.id.chakra_card5);
         CardView ajna_chakra = findViewById(R.id.chakra_card6);
 
-        OpenYoutube(muladhara_chakra, "AuGIHznyuXk");
-        OpenYoutube(swadhisthana_chakra, "");
-        OpenYoutube(manipura_chakra, "");
-        OpenYoutube(anhata_chakra, "");
-        OpenYoutube(vishuddha_chakra, "");
-        OpenYoutube(ajna_chakra, "");
+        OpenYoutube(muladhara_chakra, "BgauOifrvtc");
+        OpenYoutube(swadhisthana_chakra, "B_I3xg0gyx4");
+        OpenYoutube(manipura_chakra, "QnzgRDrkRHU");
+        OpenYoutube(anhata_chakra, "pJ86HzNuTh4");
+        OpenYoutube(vishuddha_chakra, "wdlfsoO0Bhc");
+        OpenYoutube(ajna_chakra, "ABf7dgGl9ZM");
     }
 
     private void OpenYoutube(CardView card, final String VideoId){

@@ -88,21 +88,6 @@
             android:text="Register"
             android:textSize="20sp"
             android:fontFamily="@font/candara"
-            android:background="@drawable/unchecked_bg"
-            android:paddingStart="20sp"
-            android:layout_marginEnd="15sp"
-            android:layout_toStartOf="@id/center_line"
-            android:textColor="@color/colorPrimary"
-            android:paddingEnd="20sp"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="35sp"/>
-
-        <Button
-            android:id="@+id/register_fg"
-            android:text="Register"
-            android:textSize="20sp"
-            android:fontFamily="@font/candara"
             android:background="@drawable/checked_bg"
             android:paddingStart="20sp"
             android:layout_marginEnd="15sp"
@@ -112,6 +97,24 @@
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="35sp"/>
+
+        <Button
+            android:text="Register"
+            android:id="@+id/register_fg"
+            android:textSize="20sp"
+            android:fontFamily="@font/candara"
+            android:background="@drawable/unchecked_bg"
+            android:paddingStart="20sp"
+            android:visibility="visible"
+            android:layout_marginEnd="15sp"
+            android:layout_toStartOf="@id/center_line"
+            android:textColor="@color/colorPrimary"
+            android:paddingEnd="20sp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"/>
+
+
 
         <TextView
             android:id="@+id/center_line"
@@ -124,9 +127,9 @@
             android:layout_width="wrap_content"
             android:textSize="20sp"
             android:layout_marginStart="15sp"
+            android:textColor="@color/white"
             android:layout_toEndOf="@id/center_line"
-            android:textColor="@color/colorPrimary"
-            android:background="@drawable/unchecked_bg"
+            android:background="@drawable/checked_bg"
             android:fontFamily="@font/candara"
             android:text="Log IN"
             android:textAllCaps="false"
@@ -139,9 +142,9 @@
             android:layout_width="wrap_content"
             android:textSize="20sp"
             android:layout_marginStart="15sp"
-            android:textColor="@color/white"
             android:layout_toEndOf="@id/center_line"
-            android:background="@drawable/checked_bg"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/unchecked_bg"
             android:fontFamily="@font/candara"
             android:text="Log IN"
             android:visibility="gone"

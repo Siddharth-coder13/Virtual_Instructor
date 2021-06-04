@@ -60,15 +60,6 @@
             app:cardCornerRadius="25dp">
 
         <ImageView
-            android:layout_width="32sp"
-            android:layout_height="32sp"
-            android:layout_marginStart="10sp"
-            android:layout_marginTop="10sp"
-            android:layout_gravity="top|start"
-            android:elevation="1dp"
-            android:src="@drawable/ic_menu_black_24dp"/>
-
-        <ImageView
             android:layout_width="match_parent"
             android:src="@drawable/yogagrp"
             android:layout_gravity="center"
@@ -154,7 +145,7 @@
                                 android:layout_gravity="bottom"
                                 android:fontFamily="@font/century_gothic"
                                 android:textAlignment="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:textStyle="bold"
                                 android:layout_marginTop="12dp"/>
@@ -194,7 +185,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Vrikshasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -234,7 +225,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Adho Mukho Svanasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -275,7 +266,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Balasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -314,7 +305,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Bhujangasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -353,7 +344,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Kursiasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -392,7 +383,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Naukasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -431,7 +422,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Paschimottanasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -470,7 +461,7 @@
                                 android:layout_height="match_parent"
                                 android:text="Trikonasana"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -546,15 +537,15 @@
                             android:id="@+id/padmasana_image"
                             android:layout_width="130sp"
                             android:layout_height="130sp"
-                            android:src="@drawable/mindfullness"
+                            android:src="@drawable/android"
                             android:scaleType="centerCrop"/>
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Tadasana"
+                            android:text="Coming soon"
                             android:layout_gravity="bottom"
-                            android:textColor="#000000"
+                            android:textColor="@color/colorPrimary"
                             android:textSize="15sp"
                             android:fontFamily="@font/century_gothic"
                             android:textStyle="bold"
@@ -586,14 +577,14 @@
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/mindfullness"/>
+                                android:src="@drawable/android"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Vrikshasana"
+                                android:text="Coming soon"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"
@@ -624,14 +615,14 @@
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/mindfullness"/>
+                                android:src="@drawable/android"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
-                                android:text="Kursiasana"
+                                android:text="Coming soon"
                                 android:layout_gravity="center"
-                                android:textColor="#000000"
+                                android:textColor="@color/colorPrimary"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/century_gothic"
                                 android:textStyle="bold"

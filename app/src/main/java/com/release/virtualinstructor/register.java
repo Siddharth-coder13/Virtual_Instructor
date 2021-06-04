@@ -17,7 +17,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -53,9 +52,6 @@ public class register extends Fragment {
         // Firebase authentication
         final FirebaseAuth mAuth = FirebaseAuth.getInstance();
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
-
-
-
 
 
         register.setOnClickListener(new View.OnClickListener() {
