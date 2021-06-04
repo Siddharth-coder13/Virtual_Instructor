@@ -74,7 +74,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -121,7 +121,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -167,7 +167,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -213,7 +213,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -258,7 +258,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -304,7 +304,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -350,7 +350,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -396,7 +396,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView
@@ -442,7 +442,7 @@
                             android:layout_width="100sp"
                             android:layout_height="100sp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/mindfullness"/>
+                            android:src="@drawable/android"/>
                     </androidx.cardview.widget.CardView>
 
                     <TextView

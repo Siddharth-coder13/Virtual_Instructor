@@ -68,7 +68,7 @@
                         android:layout_height="100sp"
                         android:scaleType="centerCrop"
                         android:id="@+id/med1_image"
-                        android:src="@drawable/focus"/>
+                        android:src="@drawable/android"/>
 
                     <TextView
                         android:id="@+id/med1_text"
@@ -111,7 +111,7 @@
                         android:layout_width="100sp"
                         android:layout_height="100sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:src="@drawable/android"/>
 
                     <TextView
                         android:id="@+id/med2_text"
@@ -157,7 +157,7 @@
                         android:layout_width="100sp"
                         android:layout_height="100sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:src="@drawable/android"/>
 
                     <TextView
                         android:id="@+id/med3_text"
@@ -199,7 +199,7 @@
                         android:layout_width="100sp"
                         android:layout_height="100sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:src="@drawable/android"/>
 
                     <TextView
                         android:id="@+id/med4_text"
@@ -242,7 +242,7 @@
                         android:layout_width="100sp"
                         android:layout_height="100sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:src="@drawable/android"/>
 
                     <TextView
                         android:id="@+id/med5_text"
@@ -285,7 +285,7 @@
                         android:layout_width="100sp"
                         android:layout_height="100sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/focus"/>
+                        android:src="@drawable/android"/>
 
                     <TextView
                         android:id="@+id/med6_text"
