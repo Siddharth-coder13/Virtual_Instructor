@@ -18,6 +18,7 @@ public class spalsh_activity extends AppCompatActivity {
         setContentView(R.layout.activity_spalsh_activity);
 
         timer = new Timer();
+
         timer.schedule(new TimerTask() {
             @Override
             public void run() {

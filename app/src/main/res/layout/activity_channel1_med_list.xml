@@ -81,7 +81,7 @@
                         android:id="@+id/med1_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Msin building"
+                        android:text="Main building"
                         android:textSize="20sp"
                         android:fontFamily="@font/century_gothic"
                         android:layout_centerVertical="true"
