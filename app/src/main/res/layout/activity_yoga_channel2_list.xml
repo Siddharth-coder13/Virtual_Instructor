@@ -9,462 +9,515 @@
     tools:context=".channel_yoga_list.yoga_channel2_list">
 
     <RelativeLayout
-        android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/yoga_toolbar"
+        <View
+            android:id="@+id/med_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
+            android:layout_height="100sp"
+            android:background="@color/colorPrimary"/>
 
-            <ImageView
-                android:id="@+id/yoga_channel2_back"
-                android:layout_width="32sp"
-                android:layout_height="32sp"
-                android:src="@drawable/ic_arrow_back_black_24dp"/>
-
-        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/logo1"
+            android:layout_margin = "10sp"/>
 
         <TextView
-            android:id="@+id/yogaChannel2"
+            android:id="@+id/virtual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/yoga_toolbar"
-            android:textColor="#4F7282"
-            android:text="Instructor"
+            android:textSize="25sp"
             android:textStyle="bold"
-            android:fontFamily="@font/myriad_pro_regular"
-            android:textSize="25sp"/>
+            android:textAlignment="center"
+            android:text="Virtual"
+            android:textColor="#fff"
+            android:layout_toEndOf="@id/logo"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/myriad_pro_regular"/>
 
-
-        <GridLayout
-            android:layout_below="@id/yogaChannel2"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:columnCount="1"
-            android:layout_marginBottom="15sp"
-            android:layout_marginTop="10sp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="20sp"
-            android:layout_marginEnd="20sp">
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Instructor"
+            android:textColor="#fff"
+            android:layout_marginStart="7sp"
+            android:layout_toEndOf="@id/logo"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/myriad_pro_regular"/>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="15sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55sp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="25dp">
 
-                <RelativeLayout
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/yoga_toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="?attr/actionBarSize">
+
+                    <ImageView
+                        android:id="@+id/yoga_channel2_back"
+                        android:layout_width="32sp"
+                        android:layout_height="32sp"
+                        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/yogaChannel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#4F7282"
+                    android:text="Instructor"
+                    android:layout_marginTop="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/myriad_pro_regular"
+                    android:textSize="25sp"/>
+
+                <GridLayout
+                    android:layout_below="@id/yogaChannel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="1"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga1"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga1_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="15sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga1_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga1_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 1"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga1_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga1_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 1"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga1_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga2"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga2"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga2_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga2_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga2_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 2"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga2_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga2_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 2"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga2_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga3"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga3"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga3_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga3_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga3_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 3"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga3_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga3_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 3"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga3_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga4"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga4"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga4_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga4_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga4_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 4"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga4_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga4_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 4"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga4_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga5"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga5"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga5_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga5_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga5_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 5"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga5_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga5_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 5"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga5_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga6"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga6"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga6_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga6_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga6_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 6"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga6_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga6_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 6"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga6_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga7"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga7"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga7_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga7_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga7_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 7"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga7_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga7_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 7"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga7_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga8"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga8"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga8_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga8_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga8_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 8"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga8_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga8_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 8"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga8_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/channel2_yoga9"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                app:cardElevation="10sp"
-                android:layout_marginTop="30sp"
-                android:layout_gravity="fill"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardCornerRadius="8dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
                     <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/channel2_yoga9"
                         android:layout_height="wrap_content"
-                        android:id="@+id/yoga9_image">
+                        android:layout_width="wrap_content"
+                        app:cardElevation="10sp"
+                        android:layout_marginTop="30sp"
+                        android:layout_gravity="fill"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        app:cardCornerRadius="8dp">
 
-                        <ImageView
-                            android:layout_width="100sp"
-                            android:layout_height="100sp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/android"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/yoga9_image">
+
+                                <ImageView
+                                    android:layout_width="100sp"
+                                    android:layout_height="100sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/android"/>
+                            </androidx.cardview.widget.CardView>
+
+                            <TextView
+                                android:id="@+id/yoga9_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yoga 9"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/century_gothic"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@id/yoga9_image"
+                                android:layout_marginStart="20sp"
+                                android:layout_marginEnd="20sp"
+                                android:textAlignment="center"
+                                android:textColor="#4F7282"/>
+
+                        </RelativeLayout>
+
                     </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:id="@+id/yoga9_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Yoga 9"
-                        android:textSize="20sp"
-                        android:fontFamily="@font/century_gothic"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentEnd="true"
-                        android:layout_toEndOf="@id/yoga9_image"
-                        android:layout_marginStart="20sp"
-                        android:layout_marginEnd="20sp"
-                        android:textAlignment="center"
-                        android:textColor="#4F7282"/>
+                </GridLayout>
 
-                </RelativeLayout>
+            </RelativeLayout>
 
-            </androidx.cardview.widget.CardView>
-
-        </GridLayout>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
