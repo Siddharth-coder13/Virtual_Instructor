@@ -94,14 +94,43 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/login"
-            android:layout_marginTop="20sp"
+            android:layout_below="@id/googleSignIn"
+            android:layout_marginTop="15sp"
             android:layout_centerHorizontal="true"
+            android:textSize="15sp"
             android:text="Forgot password?"
             android:fontFamily="@font/candara"
             android:textColor="@color/colorPrimary"/>
 
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or Login with"
+            android:textSize="15sp"
+            android:fontFamily="@font/candara"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10sp"/>
+
+        <ImageView
+            android:layout_width="40sp"
+            android:id="@+id/googleSignIn"
+            android:scaleType="fitCenter"
+            android:layout_height="40sp"
+            android:src="@drawable/google"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15sp"/>
+
     </RelativeLayout>
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>

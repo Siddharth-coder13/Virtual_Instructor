@@ -36,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/glad"
-        android:layout_marginTop="15sp">
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="5sp">
 
         <EditText
             android:id="@+id/name"
@@ -167,12 +168,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="or Register with"
+            android:textSize="15sp"
+            android:fontFamily="@font/candara"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/register"
             android:textColor="@color/colorPrimary"
-            android:layout_marginTop="20sp"/>
+            android:layout_marginTop="5sp"/>
 
-        <com.google.android.gms.common.SignInButton
+       <!-- <com.google.android.gms.common.SignInButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/sign_in_button"
@@ -183,17 +186,17 @@
             android:layout_below="@id/text"
             android:layout_marginBottom="20dp">
 
-        </com.google.android.gms.common.SignInButton>
+        </com.google.android.gms.common.SignInButton>-->
 
         <ImageView
-            android:layout_width="60sp"
+            android:layout_width="40sp"
             android:id="@+id/googleSignIn"
             android:scaleType="fitCenter"
             android:layout_height="40sp"
             android:src="@drawable/google"
-            android:layout_below="@id/sign_in_button"
+            android:layout_below="@id/text"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20sp"/>
+            android:layout_marginTop="5sp"/>
 
 <!--        <ImageView-->
 <!--            android:id="@+id/googleSignIn"-->
@@ -216,5 +219,12 @@
 <!--            android:layout_marginTop="542dp" />-->
 
     </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>

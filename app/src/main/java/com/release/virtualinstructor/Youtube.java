@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerCallback;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.options.IFramePlayerOptions;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.ui.PlayerUiController;
 
@@ -34,7 +35,6 @@ public class Youtube extends AppCompatActivity {
 
         final YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube);
         getLifecycle().addObserver(youTubePlayerView);
-        PlayerUiController playerUiController = youTubePlayerView.getPlayerUiController();
 
         final AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setMessage("To see in VR mode, click youtube icon below, and attach your phone to a VR set.");

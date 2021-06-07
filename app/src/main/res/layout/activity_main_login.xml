@@ -80,6 +80,7 @@
     <RelativeLayout
         android:id="@+id/button"
         android:layout_above="@id/image"
+        android:layout_marginBottom="-10sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true">
@@ -88,10 +89,10 @@
             android:text="Register"
             android:textSize="20sp"
             android:fontFamily="@font/candara"
-            android:background="@drawable/unchecked_bg"
+            android:background="@drawable/checked_bg"
             android:paddingStart="20sp"
             android:layout_marginEnd="15sp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:paddingEnd="20sp"
             android:layout_toStartOf="@id/center_line"
             android:textAllCaps="false"
@@ -143,8 +144,8 @@
             android:textSize="20sp"
             android:layout_marginStart="15sp"
             android:layout_toEndOf="@id/center_line"
-            android:textColor="@color/white"
-            android:background="@drawable/checked_bg"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/unchecked_bg"
             android:fontFamily="@font/candara"
             android:text="Log IN"
             android:visibility="gone"
@@ -161,7 +162,7 @@
         android:layout_height="1dp"
         android:background="@color/colorPrimary"
         android:layout_above="@id/button"
-        android:layout_marginBottom="30sp"
+        android:layout_marginBottom="20sp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"/>
 
@@ -169,7 +170,6 @@
         android:id="@+id/frame_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10sp"
         android:layout_above="@id/line"/>
 
 </RelativeLayout>

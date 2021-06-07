@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -53,12 +54,12 @@ public class register extends Fragment {
     private DatabaseReference databaseReference;
     private GoogleSignInClient mGoogleSignInClient;
     //private GoogleApiClient googleApiClient;
-    private SignInButton signInButton;
     private String idToken;
-    private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     private String name;
     private String email;
+    private FirebaseAuth mAuth;
+    private ProgressBar progressBar;
 
 //    @Override
 //    public void onStart(){
@@ -70,22 +71,22 @@ public class register extends Fragment {
 //        }
 //    }
 
-    @Override
+    /*@Override
     public void onStart() {
         super.onStart();
         if (authStateListener != null){
             FirebaseAuth.getInstance().signOut();
         }
-        firebaseAuth.addAuthStateListener(authStateListener);
-    }
+        mAuth.addAuthStateListener(authStateListener);
+    }*/
 
-    @Override
+    /*@Override
     public void onStop() {
         super.onStop();
         if (authStateListener != null){
-            firebaseAuth.removeAuthStateListener(authStateListener);
+            mAuth.removeAuthStateListener(authStateListener);
         }
-    }
+    }*/
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -99,34 +100,37 @@ public class register extends Fragment {
         final EditText email = v.findViewById(R.id.email_id);
         final EditText password = v.findViewById(R.id.password);
         final RadioGroup radioGroup = v.findViewById(R.id.gender);
-        Button register = v.findViewById(R.id.register);
+        Button register1 = v.findViewById(R.id.register);
 
         final Button register_fg = getActivity().findViewById(R.id.register_fg);
         final Button login_fg = getActivity().findViewById(R.id.login_fg);
+        progressBar = v.findViewById(R.id.progress);
 
         // Firebase authentication
-        final FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-        createRequest();
-        v.findViewById(R.id.googleSignIn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-            }
-        });
-        signInButton = v.findViewById(R.id.sign_in_button);
-        signInButton.setOnClickListener(new View.OnClickListener() {
+        //createRequest();
+        // Google sign in
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
+
+        mGoogleSignInClient = GoogleSignIn.getClient(getActivity(), gso);
+
+        ImageView GsignInButton;
+        GsignInButton = v.findViewById(R.id.googleSignIn);
+        GsignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
-//                startActivityForResult(intent,RC_SIGN_IN);
+                progressBar.setVisibility(View.VISIBLE);
                 Intent signInIntent = mGoogleSignInClient.getSignInIntent();
                 startActivityForResult(signInIntent, RC_SIGN_IN);
             }
         });
 
-        register.setOnClickListener(new View.OnClickListener() {
+        register1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email_id = email.getText().toString().trim();
@@ -210,28 +214,12 @@ public class register extends Fragment {
         return v;
     }
 
-    private void createRequest() {
-        // Configure Google Sign In
-        // Configure sign-in to request the user's ID, email address, and basic
-// profile. ID and basic profile are included in DEFAULT_SIGN_IN.
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-
-//        googleApiClient=new GoogleApiClient.Builder(getActivity())
-//                .enableAutoManage(getActivity(), this)
-//                .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
-//                .build();
-        // Build a GoogleSignInClient with the options specified by gso.
-        mGoogleSignInClient = GoogleSignIn.getClient(getActivity(), gso);
-    }
-
-    private void signIn() {
+    /*private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
 //        Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
 //        startActivityForResult(intent,RC_SIGN_IN);
-    }
+    }*/
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -241,14 +229,41 @@ public class register extends Fragment {
         if (requestCode == RC_SIGN_IN) {
             // The Task returned from this call is always completed, no need to attach
             // a listener.
-            //Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+
+            //GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             // handleSignInResult(task);
-            handleSignInResult(result);
+            //handleSignInResult(result);
+            try {
+                GoogleSignInAccount account = task.getResult(ApiException.class);
+                firebaseAuthWithGoogle(account.getIdToken());
+            }
+            catch (ApiException e) {
+                e.printStackTrace();
+                Toast.makeText(getContext(), "Sign in failed", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
-    private void handleSignInResult(GoogleSignInResult result/*Task<GoogleSignInAccount> completedTask*/) {
+    private void firebaseAuthWithGoogle(String idToken) {
+        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
+        mAuth.signInWithCredential(credential).addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    progressBar.setVisibility(View.GONE);
+                    Intent i = new Intent(getContext(), MainActivity.class);
+                    startActivity(i);
+                    Toast.makeText(getContext(), "Signed in successfully", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getContext(), "Sign in failed", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+
+    //private void handleSignInResult(GoogleSignInResult result/*Task<GoogleSignInAccount> completedTask*/) {
 //        try {
 //            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 //
@@ -265,7 +280,7 @@ public class register extends Fragment {
 //            Toast.makeText(getActivity(), "Sorry auth failed.", Toast.LENGTH_SHORT).show();
 //        }
 
-        if(result.isSuccess()){
+        /*if(result.isSuccess()){
             GoogleSignInAccount account = result.getSignInAccount();
             idToken = account.getIdToken();
             name = account.getDisplayName();
@@ -280,7 +295,7 @@ public class register extends Fragment {
         }
     }
 
-    private void firebaseAuthWithGoogle(AuthCredential credential){
+    /*private void firebaseAuthWithGoogle(AuthCredential credential){
 
         firebaseAuth.signInWithCredential(credential)
                 .addOnCompleteListener((Executor) this, new OnCompleteListener<AuthResult>() {
@@ -355,5 +370,5 @@ public class register extends Fragment {
 //                        // ...
 //                    }
 //                });
-//    }
+//    }*/
 }

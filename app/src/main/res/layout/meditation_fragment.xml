@@ -503,7 +503,7 @@
                             <ImageView
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
-                                android:src="@drawable/android"
+                                android:src="@drawable/main_building"
                                 android:scaleType="centerCrop"/>
 
                             <TextView
@@ -557,7 +557,7 @@
                             <ImageView
                                 android:layout_width="130sp"
                                 android:layout_height="130sp"
-                                android:src="@drawable/android"
+                                android:src="@drawable/main_building"
                                 android:scaleType="centerCrop"/>
 
                             <TextView
